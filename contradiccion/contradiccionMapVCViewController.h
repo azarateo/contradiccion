@@ -9,9 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
-@interface contradiccionMapVCViewController : UIViewController{
+@interface contradiccionMapVCViewController : UIViewController <CLLocationManagerDelegate>{
 
+    NSMutableData *datos;
+    NSMutableArray *arregloDatos;
+    NSMutableArray *losdatosreales;
     MKMapView *mapview;
+    CLLocationCoordinate2D ubicacionActual;
 
 }
 
