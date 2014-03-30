@@ -27,19 +27,11 @@
    
     // Do any additional setup after loading the view.
     
-   
-    
-    
-    
-    
-    
-    
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     NSURL *url = [NSURL URLWithString:@"http://servicedatosabiertoscolombia.cloudapp.net/v1/Ministerio_de_Justicia/ubicacionprogramas?$format=json&"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [[NSURLConnection alloc] initWithRequest:request delegate:self];
-    
-    
+        
 }
 
 
@@ -129,7 +121,7 @@
     
 }
 
-/*
+
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
     
     NSLog(@"Error en la descarga");
@@ -139,16 +131,12 @@
     
     
 }
- 
-*/
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -159,19 +147,5 @@
     return self;
 }
 
-
-
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
