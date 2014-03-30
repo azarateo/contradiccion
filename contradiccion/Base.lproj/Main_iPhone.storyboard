@@ -1,29 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Vuf-vu-UWO">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
-        <scene sceneID="Vex-rW-GRa">
-            <objects>
-                <tabBarController id="8YX-ce-x5E" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="JQR-rB-NYL">
-                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="Vuf-vu-UWO" kind="relationship" relationship="viewControllers" id="Ipt-GX-lbZ"/>
-                        <segue destination="YRA-vH-cdL" kind="relationship" relationship="viewControllers" id="Kea-Yb-Yg1"/>
-                        <segue destination="R47-OQ-V3o" kind="relationship" relationship="viewControllers" id="IKG-3i-1Rf"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-150" y="220"/>
-        </scene>
         <!--Table View Controller - SEGUNDA LISTA-->
         <scene sceneID="jHl-pF-5Pi">
             <objects>
@@ -67,7 +47,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rNL-qA-p5P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="692" y="870"/>
+            <point key="canvasLocation" x="1416" y="-290"/>
         </scene>
         <!--Contradiccion HomeTVC - PROGRAMAS-->
         <scene sceneID="d7f-Xk-hLz">
@@ -115,13 +95,15 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PLP-WC-iUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1383" y="110"/>
+            <point key="canvasLocation" x="1027" y="-580"/>
         </scene>
         <!--Navigation Controller - Item-->
         <scene sceneID="ITn-pH-sVJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vuf-vu-UWO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Xgn-oV-8zq"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="mapa20.png" id="Xgn-oV-8zq">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="akv-5w-I59"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ko4-LR-6ws">
@@ -130,17 +112,69 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="e7T-97-nvw" kind="relationship" relationship="rootViewController" id="J5N-z2-RRE"/>
+                        <segue destination="VNB-YY-J4D" kind="relationship" relationship="rootViewController" id="H29-QM-hKF"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZQU-Eq-qlJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1012" y="136"/>
+            <point key="canvasLocation" x="104" y="-580"/>
         </scene>
-        <!--View Controller - INDICES GEOREFERENCIADOS-->
+        <!--View Controller - INICIO-->
+        <scene sceneID="O95-sD-Ny7">
+            <objects>
+                <viewController id="VNB-YY-J4D" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P0U-3C-3bU"/>
+                        <viewControllerLayoutGuide type="bottom" id="jnq-C7-dVc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Dc-rV-frS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ldo-YW-wjC">
+                                <rect key="frame" x="20" y="257" width="55" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="mariguana.png">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <segue destination="e7T-97-nvw" kind="push" id="aYl-NA-0ST"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tvJ-F2-0ZL">
+                                <rect key="frame" x="135" y="261" width="50" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="map.png">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <segue destination="QL7-uz-QQL" kind="push" id="jh6-MF-wN1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euz-S6-Uk2">
+                                <rect key="frame" x="251" y="261" width="49" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                <state key="normal" image="home.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tCo-jh-dCN" kind="push" id="zsB-jC-ppn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="INICIO" id="x42-ab-zBl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mHe-Mg-evu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="566" y="-580"/>
+        </scene>
+        <!--Contradiccion MapVC View Controller - INDICES GEOREFERENCIADOS-->
         <scene sceneID="emV-uZ-Vmg">
             <objects>
-                <viewController id="QL7-uz-QQL" sceneMemberID="viewController">
+                <viewController id="QL7-uz-QQL" customClass="contradiccionMapVCViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e3h-nE-R9b"/>
                         <viewControllerLayoutGuide type="bottom" id="SnS-Fd-ads"/>
@@ -148,53 +182,30 @@
                     <view key="view" contentMode="scaleToFill" id="sLO-OI-jcm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RZ2-gg-1kH">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="INDICES GEOREFERENCIADOS" id="Ciy-Uu-n3e"/>
+                    <connections>
+                        <outlet property="mapa" destination="RZ2-gg-1kH" id="lK7-Hl-bHF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AX3-hv-w1u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="640" y="-346"/>
-        </scene>
-        <!--Navigation Controller - Item-->
-        <scene sceneID="zJY-n8-Lb3">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YRA-vH-cdL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="E49-T8-1vY"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XQw-gC-GsX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="tCo-jh-dCN" kind="relationship" relationship="rootViewController" id="sod-du-S3u"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lyh-rc-eJS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="283" y="732"/>
-        </scene>
-        <!--Navigation Controller - Item-->
-        <scene sceneID="s3a-4j-vag">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="R47-OQ-V3o" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="thR-Fs-hfW"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9TS-FQ-wJA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="QL7-uz-QQL" kind="relationship" relationship="rootViewController" id="ed6-bE-Zsl"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AQk-yh-xzS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="274" y="-346"/>
+            <point key="canvasLocation" x="1027" y="90"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="home.png" width="205" height="199"/>
+        <image name="map.png" width="169" height="163"/>
+        <image name="mapa20.png" width="20" height="20"/>
+        <image name="mariguana.png" width="111" height="97"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

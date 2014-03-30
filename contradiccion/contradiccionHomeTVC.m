@@ -30,7 +30,7 @@
 {
     [super viewDidLoad];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    NSURL *url = [NSURL URLWithString:@"http://servicedatosabiertoscolombia.cloudapp.net/v1/Ministerio_de_Justicia/ubicacionprogramas?$format=json&"];
+    NSURL *url = [NSURL URLWithString:@"http://servicedatosabiertoscolombia.cloudapp.net/v1/Ministerio_de_Justicia/tabladrogas?$format=json&"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [[NSURLConnection alloc] initWithRequest:request delegate:self];
     
@@ -60,7 +60,7 @@
     NSString *datosPuros = [[NSString alloc] initWithData:datos encoding:NSUTF8StringEncoding];
     //NSLog(@"Datos sin modificar: %@", datosPuros);
     NSString *datosmejorados = [datosPuros substringFromIndex:5];
-    int numerodedatos = datosmejorados.length-1;
+    long numerodedatos = datosmejorados.length-1;
     NSString *datosfinales = [datosmejorados substringToIndex:numerodedatos];
     //NSLog(@"Datos modificados: %@", datosfinales);
     NSLog(@"Codificación de datos a UTF8");
@@ -110,8 +110,8 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"elementoHome" forIndexPath:indexPath];
    [[arregloDatos objectAtIndex:indexPath.row] objectForKey:@"d"];
-    cell.textLabel.text = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:@"nombre"];
-    cell.detailTextLabel.text = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:@"direccion"];
+    cell.textLabel.text = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:@"nombre_de_la_droga"];
+    cell.detailTextLabel.text = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:@"clasificacion"];
    
     return cell;
 }
