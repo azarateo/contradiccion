@@ -9,7 +9,7 @@
             <objects>
                 <tableViewController id="tCo-jh-dCN" customClass="contradiccionTableViewController2" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="VSX-ee-x6n">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -65,7 +65,7 @@
                         <viewControllerLayoutGuide type="bottom" id="8uq-Pi-p8K"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gak-aJ-6XY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¿Cómo usar la aplicación?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPh-uv-8tt">
@@ -82,7 +82,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.50967323789999996" green="0.74978130580000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Compartir" id="HXe-sz-BYG"/>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="0tQ-Mj-Kte"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r47-WA-njr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,7 +97,7 @@
             <objects>
                 <tableViewController id="e7T-97-nvw" customClass="contradiccionHomeTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="vJp-tc-4Nt">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="separatorColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
@@ -170,11 +174,11 @@
                         <viewControllerLayoutGuide type="bottom" id="5Av-j5-nm1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hvN-g1-fnu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="evolution300.png" translatesAutoresizingMaskIntoConstraints="NO" id="qyT-qK-Wwl">
-                                <rect key="frame" x="51" y="113" width="219" height="148"/>
+                                <rect key="frame" x="51" y="113" width="219" height="60"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Estadísticas de uso de las drogas a través del tiempo durante los últimos años en entidades universitarias" translatesAutoresizingMaskIntoConstraints="NO" id="T5g-xC-3mM">
@@ -224,11 +228,11 @@
                         <viewControllerLayoutGuide type="bottom" id="jnq-C7-dVc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9Dc-rV-frS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fQE-vJ-Yb8">
-                                <rect key="frame" x="0.0" y="459" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="371" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <items/>
@@ -424,7 +428,7 @@
                         <viewControllerLayoutGuide type="bottom" id="IwD-sZ-gle"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4mT-kf-9iX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Conoce los programas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdj-qc-lvA">
@@ -489,21 +493,23 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.98303289852414721" blue="0.77515840352751519" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rmM-mW-8HY"/>
+                    <navigationItem key="navigationItem" id="rmM-mW-8HY">
+                        <barButtonItem key="rightBarButtonItem" title="Compartir" id="RlG-RV-6ar"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="picker" destination="9hg-L5-8GB" id="NPJ-oT-MX1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fWY-af-fxk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="189" y="-115"/>
+            <point key="canvasLocation" x="-367" y="-575"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="yei-oE-fwC">
             <objects>
                 <tableViewController id="yuT-Oa-Y5m" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hxW-aO-Ayv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -676,7 +682,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cSg-Mq-FCI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="597" y="88"/>
+            <point key="canvasLocation" x="-267" y="248"/>
         </scene>
         <!--Contradiccion MapVC View Controller - Programas cerca a ti-->
         <scene sceneID="emV-uZ-Vmg">
@@ -687,11 +693,11 @@
                         <viewControllerLayoutGuide type="bottom" id="SnS-Fd-ads"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sLO-OI-jcm">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RZ2-gg-1kH">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
                         </subviews>
@@ -704,7 +710,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AX3-hv-w1u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="983" y="-184"/>
+            <point key="canvasLocation" x="1767" y="-620"/>
         </scene>
         <!--View Controller - Extasis-->
         <scene sceneID="P9w-4h-agA">
@@ -715,7 +721,7 @@
                         <viewControllerLayoutGuide type="bottom" id="yX9-Wq-rDi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vor-mh-eL6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DEFINICION" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldZ-j6-yYK">
@@ -741,7 +747,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SbQ-Bd-BbO">
-                                <rect key="frame" x="20" y="370" width="280" height="146"/>
+                                <rect key="frame" x="20" y="365" width="280" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Nombre dado a la sustancia denominada quimicamente como 34-metilendioximetanfetamina cuya abreviatura es MDMA. Tambien se consideran sustancias tipo extasis la 34-metilendioxianfetamina (MDA) y la 34-metilendioxietilanfetamina (MDEA)</string>
@@ -749,7 +755,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSI-lg-WEN">
-                                <rect key="frame" x="87" y="510" width="122" height="30"/>
+                                <rect key="frame" x="93" y="443" width="122" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Efectos">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -769,7 +775,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5xe-qz-TBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="983" y="494"/>
+            <point key="canvasLocation" x="123" y="238"/>
         </scene>
         <!--View Controller - Físico-->
         <scene sceneID="gPn-V9-7Lr">
@@ -780,7 +786,7 @@
                         <viewControllerLayoutGuide type="bottom" id="pbj-qt-dFU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1NM-a0-kUu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="efectos2.png" translatesAutoresizingMaskIntoConstraints="NO" id="uLb-ZE-yUL">
@@ -806,7 +812,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUd-eJ-idB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1531" y="197"/>
+            <point key="canvasLocation" x="1063" y="161"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="iPL-zS-ESf">
@@ -826,7 +832,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bpx-Oj-uH9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1318" y="483"/>
+            <point key="canvasLocation" x="525" y="223"/>
         </scene>
         <!--View Controller - Emocional-->
         <scene sceneID="SnR-f6-ffn">
@@ -837,11 +843,11 @@
                         <viewControllerLayoutGuide type="bottom" id="5yb-N3-vZg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ccK-iO-aVf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mariguana efecto emocional.png" translatesAutoresizingMaskIntoConstraints="NO" id="hgV-rT-m5x">
-                                <rect key="frame" x="29" y="83" width="271" height="217"/>
+                                <rect key="frame" x="29" y="83" width="271" height="129"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFs-Rd-tXF">
@@ -859,7 +865,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YFP-2R-ygG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1531" y="850"/>
+            <point key="canvasLocation" x="1063" y="854"/>
         </scene>
     </scenes>
     <resources>
@@ -886,6 +892,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
