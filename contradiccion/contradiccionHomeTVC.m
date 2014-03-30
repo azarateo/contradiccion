@@ -47,7 +47,7 @@
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
 
-    NSLog(@"Recibió datos de la conexión");
+    NSLog(@"descargando datos...");
     
     
     
@@ -63,18 +63,13 @@
     int numerodedatos = datosmejorados.length-1;
     NSString *datosfinales = [datosmejorados substringToIndex:numerodedatos];
     //NSLog(@"Datos modificados: %@", datosfinales);
-    NSLog(@"Paso 1");
+    NSLog(@"Codificación de datos a UTF8");
     NSData *losdatos = [datosfinales dataUsingEncoding:NSUTF8StringEncoding];
-    NSLog(@"Paso 2");
+    NSLog(@"Finaliza codifcaci");
 
     
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     arregloDatos = [NSJSONSerialization JSONObjectWithData:losdatos options:NSJSONReadingMutableContainers|NSJSONReadingMutableLeaves error:nil];
-    
-    
-    //NSLog(@"arreglo: %@",arregloDatos);
-   
-    
     [tablaDatos reloadData];
     
 }
@@ -112,18 +107,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"Paso por aqui");
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"elementoHome" forIndexPath:indexPath];
-    cell.textLabel.text = @"Hola";
-   
-    
-    //cell.textLabel.text = [[losdatosreales objectAtIndex:indexPath.row] objectForKey:@"RowKey"];
-    
-    
-    //NSDictionary *elemento = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:@"d"];
-    cell.textLabel.text = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:@"departamento"];
-    //NSLog(@"%@",[arregloDatos objectAtIndex:indexPath.row]);
-    
+   [[arregloDatos objectAtIndex:indexPath.row] objectForKey:@"d"];
+    cell.textLabel.text = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:@"nombre"];
+    cell.detailTextLabel.text = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:@"direccion"];
    
     return cell;
 }
