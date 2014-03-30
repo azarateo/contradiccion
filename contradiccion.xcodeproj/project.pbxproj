@@ -30,6 +30,17 @@
 		FC3681FD18E8813E00C60961 /* nps.png in Resources */ = {isa = PBXBuildFile; fileRef = FC3681FA18E8813E00C60961 /* nps.png */; };
 		FC3681FF18E8827F00C60961 /* mariguana efecto emocional.png in Resources */ = {isa = PBXBuildFile; fileRef = FC3681FE18E8827F00C60961 /* mariguana efecto emocional.png */; };
 		FC36820118E888AD00C60961 /* ICONO.png in Resources */ = {isa = PBXBuildFile; fileRef = FC36820018E888AD00C60961 /* ICONO.png */; };
+		FC6E61B818E8961900D3BB95 /* ICONO29.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6E61B118E8961900D3BB95 /* ICONO29.png */; };
+		FC6E61B918E8961900D3BB95 /* ICONO40.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6E61B218E8961900D3BB95 /* ICONO40.png */; };
+		FC6E61BA18E8961900D3BB95 /* ICONO58.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6E61B318E8961900D3BB95 /* ICONO58.png */; };
+		FC6E61BB18E8961900D3BB95 /* ICONO76.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6E61B418E8961900D3BB95 /* ICONO76.png */; };
+		FC6E61BC18E8961900D3BB95 /* ICONO80.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6E61B518E8961900D3BB95 /* ICONO80.png */; };
+		FC6E61BD18E8961900D3BB95 /* ICONO120.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6E61B618E8961900D3BB95 /* ICONO120.png */; };
+		FC6E61BE18E8961900D3BB95 /* ICONO152.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6E61B718E8961900D3BB95 /* ICONO152.png */; };
+		FC6E61C018E89BE700D3BB95 /* PAGINAAYUDA.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6E61BF18E89BE700D3BB95 /* PAGINAAYUDA.png */; };
+		FC6E61C418E89EFB00D3BB95 /* estadi.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6E61C318E89EFB00D3BB95 /* estadi.png */; };
+		FC6E61C618E89FD600D3BB95 /* evolution300.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6E61C518E89FD600D3BB95 /* evolution300.png */; };
+		FC6E61CD18E8B45F00D3BB95 /* contradiccionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6E61CC18E8B45F00D3BB95 /* contradiccionViewController.m */; };
 		FCD0884918E73B7100C294F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD0884818E73B7100C294F3 /* Foundation.framework */; };
 		FCD0884B18E73B7100C294F3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD0884A18E73B7100C294F3 /* CoreGraphics.framework */; };
 		FCD0884D18E73B7100C294F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD0884C18E73B7100C294F3 /* UIKit.framework */; };
@@ -83,6 +94,18 @@
 		FC3681FA18E8813E00C60961 /* nps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nps.png; path = ../../../../../Downloads/nps.png; sourceTree = "<group>"; };
 		FC3681FE18E8827F00C60961 /* mariguana efecto emocional.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mariguana efecto emocional.png"; path = "../../../../../Downloads/mariguana efecto emocional.png"; sourceTree = "<group>"; };
 		FC36820018E888AD00C60961 /* ICONO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ICONO.png; path = ../../../../../Downloads/ICONO.png; sourceTree = "<group>"; };
+		FC6E61B118E8961900D3BB95 /* ICONO29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ICONO29.png; path = ../../../../../Downloads/ICONO29.png; sourceTree = "<group>"; };
+		FC6E61B218E8961900D3BB95 /* ICONO40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ICONO40.png; path = ../../../../../Downloads/ICONO40.png; sourceTree = "<group>"; };
+		FC6E61B318E8961900D3BB95 /* ICONO58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ICONO58.png; path = ../../../../../Downloads/ICONO58.png; sourceTree = "<group>"; };
+		FC6E61B418E8961900D3BB95 /* ICONO76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ICONO76.png; path = ../../../../../Downloads/ICONO76.png; sourceTree = "<group>"; };
+		FC6E61B518E8961900D3BB95 /* ICONO80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ICONO80.png; path = ../../../../../Downloads/ICONO80.png; sourceTree = "<group>"; };
+		FC6E61B618E8961900D3BB95 /* ICONO120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ICONO120.png; path = ../../../../../Downloads/ICONO120.png; sourceTree = "<group>"; };
+		FC6E61B718E8961900D3BB95 /* ICONO152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ICONO152.png; path = ../../../../../Downloads/ICONO152.png; sourceTree = "<group>"; };
+		FC6E61BF18E89BE700D3BB95 /* PAGINAAYUDA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PAGINAAYUDA.png; path = ../../../../../Downloads/PAGINAAYUDA.png; sourceTree = "<group>"; };
+		FC6E61C318E89EFB00D3BB95 /* estadi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = estadi.png; path = ../../../../../Downloads/estadi.png; sourceTree = "<group>"; };
+		FC6E61C518E89FD600D3BB95 /* evolution300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = evolution300.png; path = ../../../../../Downloads/evolution300.png; sourceTree = "<group>"; };
+		FC6E61CB18E8B45F00D3BB95 /* contradiccionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = contradiccionViewController.h; sourceTree = "<group>"; };
+		FC6E61CC18E8B45F00D3BB95 /* contradiccionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = contradiccionViewController.m; sourceTree = "<group>"; };
 		FCD0884518E73B7100C294F3 /* contradiccion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = contradiccion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD0884818E73B7100C294F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FCD0884A18E73B7100C294F3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -130,6 +153,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC6E61CA18E8B42600D3BB95 /* imagenes */ = {
+			isa = PBXGroup;
+			children = (
+				FC6E61C518E89FD600D3BB95 /* evolution300.png */,
+				FC6E61C318E89EFB00D3BB95 /* estadi.png */,
+				FC6E61BF18E89BE700D3BB95 /* PAGINAAYUDA.png */,
+				FC6E61B118E8961900D3BB95 /* ICONO29.png */,
+				FC6E61B218E8961900D3BB95 /* ICONO40.png */,
+				FC6E61B318E8961900D3BB95 /* ICONO58.png */,
+				FC6E61B418E8961900D3BB95 /* ICONO76.png */,
+				FC6E61B518E8961900D3BB95 /* ICONO80.png */,
+				FC6E61B618E8961900D3BB95 /* ICONO120.png */,
+				FC6E61B718E8961900D3BB95 /* ICONO152.png */,
+				FC36820018E888AD00C60961 /* ICONO.png */,
+				FC3681FE18E8827F00C60961 /* mariguana efecto emocional.png */,
+				FC3681F818E8813E00C60961 /* efectos.png */,
+				FC3681F918E8813E00C60961 /* efectos2.png */,
+				FC3681FA18E8813E00C60961 /* nps.png */,
+				FC3681F618E87A9000C60961 /* natural.png */,
+				FC3681F418E879EE00C60961 /* sinteticas.png */,
+				FC3681EE18E879C900C60961 /* alucilogenas.png */,
+				FC3681EF18E879C900C60961 /* emergentes.png */,
+				FC3681F018E879C900C60961 /* estimulantes.png */,
+				FC3681E618E7F6B700C60961 /* drogas.png */,
+				FC3681E718E7F6B700C60961 /* VOTO.png */,
+				FC3681E818E7F6B700C60961 /* MAPAFINAL.png */,
+				FC3681E918E7F6B700C60961 /* APOYATE.png */,
+				FC3681E418E7E62200C60961 /* CONTR.jpg */,
+				FC3681DF18E7C95800C60961 /* mariguana.png */,
+				FC3681D518E7C6D400C60961 /* map.png */,
+				FC3681D618E7C6D400C60961 /* help.png */,
+				FC3681D718E7C6D400C60961 /* home.png */,
+				FC3681D818E7C6D400C60961 /* programa.png */,
+			);
+			name = imagenes;
+			sourceTree = "<group>";
+		};
 		FCD0883C18E73B7100C294F3 = {
 			isa = PBXGroup;
 			children = (
@@ -164,26 +224,7 @@
 		FCD0884E18E73B7100C294F3 /* contradiccion */ = {
 			isa = PBXGroup;
 			children = (
-				FC36820018E888AD00C60961 /* ICONO.png */,
-				FC3681FE18E8827F00C60961 /* mariguana efecto emocional.png */,
-				FC3681F818E8813E00C60961 /* efectos.png */,
-				FC3681F918E8813E00C60961 /* efectos2.png */,
-				FC3681FA18E8813E00C60961 /* nps.png */,
-				FC3681F618E87A9000C60961 /* natural.png */,
-				FC3681F418E879EE00C60961 /* sinteticas.png */,
-				FC3681EE18E879C900C60961 /* alucilogenas.png */,
-				FC3681EF18E879C900C60961 /* emergentes.png */,
-				FC3681F018E879C900C60961 /* estimulantes.png */,
-				FC3681E618E7F6B700C60961 /* drogas.png */,
-				FC3681E718E7F6B700C60961 /* VOTO.png */,
-				FC3681E818E7F6B700C60961 /* MAPAFINAL.png */,
-				FC3681E918E7F6B700C60961 /* APOYATE.png */,
-				FC3681E418E7E62200C60961 /* CONTR.jpg */,
-				FC3681DF18E7C95800C60961 /* mariguana.png */,
-				FC3681D518E7C6D400C60961 /* map.png */,
-				FC3681D618E7C6D400C60961 /* help.png */,
-				FC3681D718E7C6D400C60961 /* home.png */,
-				FC3681D818E7C6D400C60961 /* programa.png */,
+				FC6E61CA18E8B42600D3BB95 /* imagenes */,
 				FCD0885718E73B7100C294F3 /* contradiccionAppDelegate.h */,
 				FCD0885818E73B7100C294F3 /* contradiccionAppDelegate.m */,
 				FCD0885A18E73B7100C294F3 /* Main_iPhone.storyboard */,
@@ -196,6 +237,8 @@
 				FC3681D118E7C31300C60961 /* contradiccionMapVCViewController.m */,
 				FC3681E118E7D29100C60961 /* contradiccionTableViewController2.h */,
 				FC3681E218E7D29100C60961 /* contradiccionTableViewController2.m */,
+				FC6E61CB18E8B45F00D3BB95 /* contradiccionViewController.h */,
+				FC6E61CC18E8B45F00D3BB95 /* contradiccionViewController.m */,
 			);
 			path = contradiccion;
 			sourceTree = "<group>";
@@ -309,16 +352,25 @@
 				FC3681FF18E8827F00C60961 /* mariguana efecto emocional.png in Resources */,
 				FC3681F518E879EE00C60961 /* sinteticas.png in Resources */,
 				FC3681F218E879C900C60961 /* emergentes.png in Resources */,
+				FC6E61B818E8961900D3BB95 /* ICONO29.png in Resources */,
 				FC3681EA18E7F6B700C60961 /* drogas.png in Resources */,
 				FC36820118E888AD00C60961 /* ICONO.png in Resources */,
+				FC6E61C418E89EFB00D3BB95 /* estadi.png in Resources */,
+				FC6E61C018E89BE700D3BB95 /* PAGINAAYUDA.png in Resources */,
 				FC3681DD18E7C6D400C60961 /* programa.png in Resources */,
+				FC6E61C618E89FD600D3BB95 /* evolution300.png in Resources */,
+				FC6E61BE18E8961900D3BB95 /* ICONO152.png in Resources */,
 				FCD0885F18E73B7100C294F3 /* Main_iPad.storyboard in Resources */,
 				FC3681FC18E8813E00C60961 /* efectos2.png in Resources */,
+				FC6E61BA18E8961900D3BB95 /* ICONO58.png in Resources */,
 				FC3681EB18E7F6B700C60961 /* VOTO.png in Resources */,
 				FCD0886718E73B7100C294F3 /* Images.xcassets in Resources */,
+				FC6E61BC18E8961900D3BB95 /* ICONO80.png in Resources */,
 				FC3681DC18E7C6D400C60961 /* home.png in Resources */,
 				FC3681FD18E8813E00C60961 /* nps.png in Resources */,
 				FC3681E518E7E62200C60961 /* CONTR.jpg in Resources */,
+				FC6E61BD18E8961900D3BB95 /* ICONO120.png in Resources */,
+				FC6E61BB18E8961900D3BB95 /* ICONO76.png in Resources */,
 				FC3681F318E879C900C60961 /* estimulantes.png in Resources */,
 				FC3681DB18E7C6D400C60961 /* help.png in Resources */,
 				FC3681FB18E8813E00C60961 /* efectos.png in Resources */,
@@ -329,6 +381,7 @@
 				FC3681EC18E7F6B700C60961 /* MAPAFINAL.png in Resources */,
 				FCD0885318E73B7100C294F3 /* InfoPlist.strings in Resources */,
 				FC3681E018E7C95800C60961 /* mariguana.png in Resources */,
+				FC6E61B918E8961900D3BB95 /* ICONO40.png in Resources */,
 				FC3681DA18E7C6D400C60961 /* map.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +406,7 @@
 				FCD0885918E73B7100C294F3 /* contradiccionAppDelegate.m in Sources */,
 				FC3681D218E7C31300C60961 /* contradiccionMapVCViewController.m in Sources */,
 				FC3681E318E7D29100C60961 /* contradiccionTableViewController2.m in Sources */,
+				FC6E61CD18E8B45F00D3BB95 /* contradiccionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
