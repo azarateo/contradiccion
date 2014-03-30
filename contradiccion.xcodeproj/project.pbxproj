@@ -14,6 +14,12 @@
 		FC3681DC18E7C6D400C60961 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = FC3681D718E7C6D400C60961 /* home.png */; };
 		FC3681DD18E7C6D400C60961 /* programa.png in Resources */ = {isa = PBXBuildFile; fileRef = FC3681D818E7C6D400C60961 /* programa.png */; };
 		FC3681E018E7C95800C60961 /* mariguana.png in Resources */ = {isa = PBXBuildFile; fileRef = FC3681DF18E7C95800C60961 /* mariguana.png */; };
+		FC3681E318E7D29100C60961 /* contradiccionTableViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3681E218E7D29100C60961 /* contradiccionTableViewController2.m */; };
+		FC3681E518E7E62200C60961 /* CONTR.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC3681E418E7E62200C60961 /* CONTR.jpg */; };
+		FC3681EA18E7F6B700C60961 /* drogas.png in Resources */ = {isa = PBXBuildFile; fileRef = FC3681E618E7F6B700C60961 /* drogas.png */; };
+		FC3681EB18E7F6B700C60961 /* VOTO.png in Resources */ = {isa = PBXBuildFile; fileRef = FC3681E718E7F6B700C60961 /* VOTO.png */; };
+		FC3681EC18E7F6B700C60961 /* MAPAFINAL.png in Resources */ = {isa = PBXBuildFile; fileRef = FC3681E818E7F6B700C60961 /* MAPAFINAL.png */; };
+		FC3681ED18E7F6B700C60961 /* APOYATE.png in Resources */ = {isa = PBXBuildFile; fileRef = FC3681E918E7F6B700C60961 /* APOYATE.png */; };
 		FCD0884918E73B7100C294F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD0884818E73B7100C294F3 /* Foundation.framework */; };
 		FCD0884B18E73B7100C294F3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD0884A18E73B7100C294F3 /* CoreGraphics.framework */; };
 		FCD0884D18E73B7100C294F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD0884C18E73B7100C294F3 /* UIKit.framework */; };
@@ -50,6 +56,13 @@
 		FC3681D718E7C6D400C60961 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../../../../Downloads/contradiccion/home.png; sourceTree = "<group>"; };
 		FC3681D818E7C6D400C60961 /* programa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = programa.png; path = ../../../../../Downloads/contradiccion/programa.png; sourceTree = "<group>"; };
 		FC3681DF18E7C95800C60961 /* mariguana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mariguana.png; path = ../../../../../Downloads/contradiccion/mariguana.png; sourceTree = "<group>"; };
+		FC3681E118E7D29100C60961 /* contradiccionTableViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = contradiccionTableViewController2.h; sourceTree = "<group>"; };
+		FC3681E218E7D29100C60961 /* contradiccionTableViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = contradiccionTableViewController2.m; sourceTree = "<group>"; };
+		FC3681E418E7E62200C60961 /* CONTR.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = CONTR.jpg; path = ../../../../../Downloads/contradiccion/CONTR.jpg; sourceTree = "<group>"; };
+		FC3681E618E7F6B700C60961 /* drogas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = drogas.png; path = "../../../../../Downloads/contradiccion(1)/drogas.png"; sourceTree = "<group>"; };
+		FC3681E718E7F6B700C60961 /* VOTO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VOTO.png; path = "../../../../../Downloads/contradiccion(1)/VOTO.png"; sourceTree = "<group>"; };
+		FC3681E818E7F6B700C60961 /* MAPAFINAL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MAPAFINAL.png; path = "../../../../../Downloads/contradiccion(1)/MAPAFINAL.png"; sourceTree = "<group>"; };
+		FC3681E918E7F6B700C60961 /* APOYATE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = APOYATE.png; path = "../../../../../Downloads/contradiccion(1)/APOYATE.png"; sourceTree = "<group>"; };
 		FCD0884518E73B7100C294F3 /* contradiccion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = contradiccion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD0884818E73B7100C294F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FCD0884A18E73B7100C294F3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -131,6 +144,11 @@
 		FCD0884E18E73B7100C294F3 /* contradiccion */ = {
 			isa = PBXGroup;
 			children = (
+				FC3681E618E7F6B700C60961 /* drogas.png */,
+				FC3681E718E7F6B700C60961 /* VOTO.png */,
+				FC3681E818E7F6B700C60961 /* MAPAFINAL.png */,
+				FC3681E918E7F6B700C60961 /* APOYATE.png */,
+				FC3681E418E7E62200C60961 /* CONTR.jpg */,
 				FC3681DF18E7C95800C60961 /* mariguana.png */,
 				FC3681D518E7C6D400C60961 /* map.png */,
 				FC3681D618E7C6D400C60961 /* help.png */,
@@ -146,6 +164,8 @@
 				FCD0888418E73D1400C294F3 /* contradiccionHomeTVC.m */,
 				FC3681D018E7C31300C60961 /* contradiccionMapVCViewController.h */,
 				FC3681D118E7C31300C60961 /* contradiccionMapVCViewController.m */,
+				FC3681E118E7D29100C60961 /* contradiccionTableViewController2.h */,
+				FC3681E218E7D29100C60961 /* contradiccionTableViewController2.m */,
 			);
 			path = contradiccion;
 			sourceTree = "<group>";
@@ -256,12 +276,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC3681EA18E7F6B700C60961 /* drogas.png in Resources */,
 				FC3681DD18E7C6D400C60961 /* programa.png in Resources */,
 				FCD0885F18E73B7100C294F3 /* Main_iPad.storyboard in Resources */,
+				FC3681EB18E7F6B700C60961 /* VOTO.png in Resources */,
 				FCD0886718E73B7100C294F3 /* Images.xcassets in Resources */,
 				FC3681DC18E7C6D400C60961 /* home.png in Resources */,
+				FC3681E518E7E62200C60961 /* CONTR.jpg in Resources */,
 				FC3681DB18E7C6D400C60961 /* help.png in Resources */,
 				FCD0885C18E73B7100C294F3 /* Main_iPhone.storyboard in Resources */,
+				FC3681ED18E7F6B700C60961 /* APOYATE.png in Resources */,
+				FC3681EC18E7F6B700C60961 /* MAPAFINAL.png in Resources */,
 				FCD0885318E73B7100C294F3 /* InfoPlist.strings in Resources */,
 				FC3681E018E7C95800C60961 /* mariguana.png in Resources */,
 				FC3681DA18E7C6D400C60961 /* map.png in Resources */,
@@ -287,6 +312,7 @@
 				FCD0885518E73B7100C294F3 /* main.m in Sources */,
 				FCD0885918E73B7100C294F3 /* contradiccionAppDelegate.m in Sources */,
 				FC3681D218E7C31300C60961 /* contradiccionMapVCViewController.m in Sources */,
+				FC3681E318E7D29100C60961 /* contradiccionTableViewController2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

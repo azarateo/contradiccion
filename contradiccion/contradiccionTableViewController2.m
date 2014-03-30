@@ -1,21 +1,18 @@
 //
-//  contradiccionHomeTVC.m
+//  contradiccionTableViewController2.m
 //  contradiccion
 //
 //  Created by azarateo on 29/03/14.
 //  Copyright (c) 2014 azarateo. All rights reserved.
 //
 
-#import "contradiccionHomeTVC.h"
+#import "contradiccionTableViewController2.h"
 
-@interface contradiccionHomeTVC ()
+@interface contradiccionTableViewController2 ()
 
 @end
 
-@implementation contradiccionHomeTVC
-
-
-
+@implementation contradiccionTableViewController2
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -30,7 +27,7 @@
 {
     [super viewDidLoad];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    NSURL *url = [NSURL URLWithString:@"http://servicedatosabiertoscolombia.cloudapp.net/v1/Ministerio_de_Justicia/tabladrogas?$format=json&"];
+    NSURL *url = [NSURL URLWithString:@"http://servicedatosabiertoscolombia.cloudapp.net/v1/Ministerio_de_Justicia/informacionprogramas?$format=json&"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [[NSURLConnection alloc] initWithRequest:request delegate:self];
     
@@ -46,12 +43,12 @@
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
-
+    
     NSLog(@"descargando datos...");
     
     
     
-        [datos appendData:data];
+    [datos appendData:data];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection{
@@ -66,7 +63,7 @@
     NSLog(@"Codificación de datos a UTF8");
     NSData *losdatos = [datosfinales dataUsingEncoding:NSUTF8StringEncoding];
     NSLog(@"Finaliza codifcaci");
-
+    
     
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     arregloDatos = [NSJSONSerialization JSONObjectWithData:losdatos options:NSJSONReadingMutableContainers|NSJSONReadingMutableLeaves error:nil];
@@ -75,13 +72,13 @@
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
-
+    
     NSLog(@"Error en la descarga");
     UIAlertView *vistaError = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Error en la descarga" delegate:nil cancelButtonTitle:@"Cancelar" otherButtonTitles:nil];
     [vistaError show];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     
-
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -108,13 +105,17 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"elementoHome" forIndexPath:indexPath];
-   //[[arregloDatos objectAtIndex:indexPath.row] objectForKey:@"d"];
-    cell.textLabel.text = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:@"nombre_de_la_droga"];
-    cell.detailTextLabel.text = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:@"clasificacion"];
-   
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"celda2" forIndexPath:indexPath];
+    //[[arregloDatos objectAtIndex:indexPath.row] objectForKey:@""];
+    
+    //cell.textLabel.text = @"Hola";
+    
+    cell.textLabel.text = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:@"tipo_de_informacion"];
+    cell.detailTextLabel.text = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:@"programa"];
+    
     return cell;
 }
+
 
 
 /*
