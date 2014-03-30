@@ -30,7 +30,7 @@
 {
     [super viewDidLoad];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    NSURL *url = [NSURL URLWithString:@"http://servicedatosabiertoscolombia.cloudapp.net/v1/Ministerio_de_Justicia/informacionprogramas?$format=json&"];
+    NSURL *url = [NSURL URLWithString:@"http://servicedatosabiertoscolombia.cloudapp.net/v1/Ministerio_de_Justicia/ubicacionprogramas?$format=json&"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [[NSURLConnection alloc] initWithRequest:request delegate:self];
     
@@ -48,15 +48,6 @@
 {
 
     NSLog(@"Recibió datos de la conexión");
-    NSString *nuevosDatos = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    //NSLog(@"Datos sin modificar: %@", nuevosDatos);
-    
-    NSString *datosmejorados = [nuevosDatos substringFromIndex:6];
-    int numerodedatos = datosmejorados.length-2;
-    NSString *datosfinales = [datosmejorados substringToIndex:numerodedatos];
-    NSLog(@"Datos modificados: %@", datosfinales);
-    
-    NSData *losdatos = [nuevosDatos dataUsingEncoding:NSUTF8StringEncoding];
     
     
     
@@ -65,8 +56,20 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection{
     
+    
+    NSString *datosPuros = [[NSString alloc] initWithData:datos encoding:NSUTF8StringEncoding];
+    //NSLog(@"Datos sin modificar: %@", datosPuros);
+    NSString *datosmejorados = [datosPuros substringFromIndex:5];
+    int numerodedatos = datosmejorados.length-1;
+    NSString *datosfinales = [datosmejorados substringToIndex:numerodedatos];
+    //NSLog(@"Datos modificados: %@", datosfinales);
+    NSLog(@"Paso 1");
+    NSData *losdatos = [datosfinales dataUsingEncoding:NSUTF8StringEncoding];
+    NSLog(@"Paso 2");
+
+    
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-    arregloDatos = [NSJSONSerialization JSONObjectWithData:datos options:NSJSONReadingMutableContainers|NSJSONReadingMutableLeaves error:nil];
+    arregloDatos = [NSJSONSerialization JSONObjectWithData:losdatos options:NSJSONReadingMutableContainers|NSJSONReadingMutableLeaves error:nil];
     
     
     //NSLog(@"arreglo: %@",arregloDatos);
@@ -118,8 +121,9 @@
     
     
     //NSDictionary *elemento = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:@"d"];
-    //cell.textLabel.text = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:@"RowKey"];
+    cell.textLabel.text = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:@"departamento"];
     //NSLog(@"%@",[arregloDatos objectAtIndex:indexPath.row]);
+    
    
     return cell;
 }
