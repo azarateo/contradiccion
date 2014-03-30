@@ -314,7 +314,7 @@
             </objects>
             <point key="canvasLocation" x="30" y="-932"/>
         </scene>
-        <!--Contradiccion MapVC View Controller - INDICES GEOREFERENCIADOS-->
+        <!--Contradiccion MapVC View Controller - UBICACIÓN DE PROGRAMAS-->
         <scene sceneID="0kz-gR-m9F">
             <objects>
                 <viewController id="6KQ-s0-yDF" customClass="contradiccionMapVCViewController" sceneMemberID="viewController">
@@ -333,14 +333,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="INDICES GEOREFERENCIADOS" id="sVy-G6-oD0"/>
+                    <navigationItem key="navigationItem" title="UBICACIÓN DE PROGRAMAS" id="sVy-G6-oD0"/>
                     <connections>
                         <outlet property="mapa" destination="5g7-Tl-GAe" id="bif-Wh-nwS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I12-G5-pfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="903" y="242"/>
+            <point key="canvasLocation" x="1991" y="-442"/>
         </scene>
     </scenes>
     <resources>

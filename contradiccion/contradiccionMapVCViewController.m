@@ -24,40 +24,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    mapa.showsUserLocation = YES;
+   
     // Do any additional setup after loading the view.
     
-    MKCoordinateRegion region;
-    
-    CLLocationCoordinate2D centro;
-    
-    centro.latitude = COLOMBIA_LAT;
-    centro.longitude = COLOMBIA_LONG;
-    
-    [self findCurrentLocation];
-    centro = ubicacionActual;
-    
-    MKCoordinateSpan elspan;
-    elspan.latitudeDelta = THESPAN;
-    elspan.longitudeDelta = THESPAN;
-    
-    region.center = centro;
-    region.span = elspan;
-    
-    [mapa setRegion:region animated:YES];
+   
     
     
     
     
-    /*
+    
+    
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     NSURL *url = [NSURL URLWithString:@"http://servicedatosabiertoscolombia.cloudapp.net/v1/Ministerio_de_Justicia/ubicacionprogramas?$format=json&"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    [[NSURLConnection alloc] initWithRequest:request delegate:self];*/
+    [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    
     
 }
 
-/*
+
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
     NSLog(@"Conexión con servidor realizada");
@@ -78,6 +63,26 @@
  
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection{
     
+     [self findCurrentLocation];
+  
+    
+    MKCoordinateRegion region;
+    
+    CLLocationCoordinate2D centro;
+    
+    centro.latitude = COLOMBIA_LAT;
+    centro.longitude = COLOMBIA_LONG;
+    
+    
+    centro = ubicacionActual;
+    
+    MKCoordinateSpan elspan;
+    elspan.latitudeDelta = THESPAN;
+    elspan.longitudeDelta = THESPAN;
+    region.center = centro;
+    region.span = elspan;
+   
+    [mapa setRegion:region animated:YES];
  
     NSString *datosPuros = [[NSString alloc] initWithData:datos encoding:NSUTF8StringEncoding];
     //NSLog(@"Datos sin modificar: %@", datosPuros);
@@ -96,9 +101,10 @@
      
     //Insertar marcadores y descripciones
     
+   
+    mapa.showsUserLocation = YES;
     
-    
-}*/
+}
 
 
 -(void)findCurrentLocation
