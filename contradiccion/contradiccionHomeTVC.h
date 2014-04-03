@@ -12,13 +12,10 @@
 
     NSMutableData *datos;
     NSMutableArray *arregloDatos;
-    NSMutableArray *losdatosreales;
+    NSURLConnection *coneccion;
     IBOutlet UITableView *tablaDatos;
     
     
 }
-
-
-
 
 @end
