@@ -10,9 +10,10 @@
 
 @interface detalleContradiccionHome : UIViewController
 
+@property (nonatomic, strong) NSString *textoTitulo;
+@property (nonatomic, strong) IBOutlet UITextField *tituloInicial;
 
+-(void)actualizarUI;
 
-
--(void)configurarTituloConTexto:(NSString *)eltitulo;
 
 @end

@@ -123,15 +123,17 @@
             }
         }
     }
-    
+    NSLog(@"---------");
 }
 
 -(void)configuraVista:(detalleContradiccionHome *)vista contitulo:(NSString *)eltitulo{
 
-    detalleContradiccionHome *controladorDetalle = vista;
-        NSLog(@"Configurando el texto");
-            [controladorDetalle configurarTituloConTexto:eltitulo];
-    controladorDetalle.title = eltitulo;
+    NSLog(@"Inicia método de configuraVista:contitulo------------");
+    vista.textoTitulo = eltitulo;
+    vista.title = eltitulo;
+    [vista actualizarUI];
+    
+    
     
 }
 

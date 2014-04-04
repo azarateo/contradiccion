@@ -181,7 +181,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zr3-Le-NGg">
-                                <rect key="frame" x="79" y="89" width="198" height="30"/>
+                                <rect key="frame" x="36" y="89" width="241" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -191,7 +191,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="0JN-sh-Vkw"/>
                     <connections>
-                        <outlet property="titulo" destination="zr3-Le-NGg" id="IWl-eC-ghf"/>
+                        <outlet property="tituloInicial" destination="zr3-Le-NGg" id="IpQ-mD-em1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lfn-6o-UXq" userLabel="First Responder" sceneMemberID="firstResponder"/>
