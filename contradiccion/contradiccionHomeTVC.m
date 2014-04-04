@@ -128,10 +128,10 @@
 
 -(void)configuraVista:(detalleContradiccionHome *)vista contitulo:(NSString *)eltitulo{
 
-  
+    detalleContradiccionHome *controladorDetalle = vista;
         NSLog(@"Configurando el texto");
-            [vista configurarTituloConTexto:eltitulo];
-    vista.title = eltitulo;
+            [controladorDetalle configurarTituloConTexto:eltitulo];
+    controladorDetalle.title = eltitulo;
     
 }
 

@@ -9,11 +9,12 @@
 #import "detalleContradiccionHome.h"
 
 @interface detalleContradiccionHome ()
+@property (nonatomic, strong) IBOutlet UITextField *tituloInicial;
 
 @end
 
 @implementation detalleContradiccionHome
-@synthesize titulo= _titulo;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,8 +30,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _titulo.text = @"prueba";
-    NSLog(@"Título actual %@",self.titulo.text);
+    self.tituloInicial.text =@"uno";
+    NSLog(@"Título actual %@",self.tituloInicial.text);
 
     // Do any additional setup after loading the view.
 }
@@ -45,11 +46,12 @@
 -(void)configurarTituloConTexto:(NSString *)eltitulo{
     
     NSLog(@"configurando el título");
-    [self.titulo setText:eltitulo];
-    _titulo.text = eltitulo;
-    NSLog(@"Título actual %@",self.titulo.text);
+   
+    NSLog(@"Título actual %@",self.tituloInicial.text);
     NSLog(@"El título fue:%@",eltitulo);
     NSLog(@"título configurado");
+   self.tituloInicial.text =@"uno";
+    NSLog(@"Título después de la configuración %@",self.tituloInicial.text);
     
 }
 /*

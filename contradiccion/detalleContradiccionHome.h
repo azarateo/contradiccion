@@ -10,7 +10,6 @@
 
 @interface detalleContradiccionHome : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *titulo;
 
 
 
