@@ -7,15 +7,17 @@
 //
 
 #import "contradiccionHomeTVC.h"
+#import "detalleContradiccionHome.h"
 
 
 #pragma mark - Configuracion de constantes
 
-#define URL_DE_DESCARGA @"http://servicedatosabiertoscolombia.cloudapp.net/v1/Ministerio_de_Justicia/tabladrogas?$format=json&"//Url para la descarga del JSON
+#define URL_DE_DESCARGA @"http://servicedatosabiertoscolombia.cloudapp.net/v1/UNGRD/emergenciastotal?$format=json&"//Url para la descarga del JSON
 #define VARIABLE_DE_DATOS_EN_JSON @"d"//Variable que contiene el arreglo que se mostrará en la tabla
 #define IDENTIFICADOR_DE_CELDA @"elementoHome"//Cadena para identificar el tipo de celda
-#define ELEMENTO_ARREGLO_PARA_TITULO @"nombre_de_la_droga"//Nombre de la llave que tiene los datos de título
-#define ELEMENTO_ARREGLO_PARA_SUBTITULO @"clasificacion"//Nombre de la llave que tiene los datos del subtítulo
+#define ELEMENTO_ARREGLO_PARA_TITULO @"evento"//Nombre de la llave que tiene los datos de título
+#define ELEMENTO_ARREGLO_PARA_SUBTITULO1 @"departamento"//Nombre de la llave que tiene los datos del subtítulo
+#define ELEMENTO_ARREGLO_PARA_SUBTITULO2 @"fecha"
 
 @implementation contradiccionHomeTVC
 
@@ -33,7 +35,7 @@
 }
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
-    NSLog(@"Se recibió respuesta del servidor");
+    NSLog(@"Se recibió respuesta del servidor...");
     datos = [[NSMutableData alloc] init];
 }
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
@@ -46,7 +48,7 @@
     NSLog(@"Terminó la carga de datos");
     NSDictionary *diccionarioInicial = [NSJSONSerialization JSONObjectWithData:datos options: 0 error:NULL];
     NSArray *arregloDelDiccionariodeDatos = [diccionarioInicial valueForKeyPath:VARIABLE_DE_DATOS_EN_JSON];
-    NSLog(@"Datos del arreglo de a partir del diccionario %@",arregloDelDiccionariodeDatos);
+    //NSLog(@"Datos del arreglo de a partir del diccionario %@",arregloDelDiccionariodeDatos);
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     arregloDatos = [NSMutableArray arrayWithArray:arregloDelDiccionariodeDatos];
     [tablaDatos reloadData];
@@ -55,6 +57,7 @@
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
     NSLog(@"Falló la conexión");
+    NSLog(@"Error:%@",[error debugDescription]);
     UIAlertView *vistaError = [[UIAlertView alloc] initWithTitle:@"Error de conexión" message:@"Error en la descarga de datos" delegate:nil cancelButtonTitle:@"Cancelar" otherButtonTitles:nil];
     [vistaError show];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
@@ -85,24 +88,52 @@
 {
     
     UITableViewCell *cell= [tableView dequeueReusableCellWithIdentifier:IDENTIFICADOR_DE_CELDA forIndexPath:indexPath];
-   //[[arregloDatos objectAtIndex:indexPath.row] objectForKey:@"d"];
+    NSString *subtitulo1 = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:ELEMENTO_ARREGLO_PARA_SUBTITULO1];
+    NSString *subtitulo2 = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:ELEMENTO_ARREGLO_PARA_SUBTITULO2];
+    NSString *subtitulo = [subtitulo1 stringByAppendingString:subtitulo2];
     cell.textLabel.text = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:ELEMENTO_ARREGLO_PARA_TITULO];
-    cell.detailTextLabel.text = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:ELEMENTO_ARREGLO_PARA_SUBTITULO];
+    cell.detailTextLabel.text = subtitulo;
    
     return cell;
 }
+
 
 #pragma mark - Navegacion al detalle después de seleccionar la fila
 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-   
-    NSIndexPath *indice = [tablaDatos indexPathForCell:sender];
+    
+    
+    NSLog(@"Inicia transición");
+    
+    if([sender isKindOfClass:[UITableViewCell class]]){
+        NSIndexPath *indice = [tablaDatos indexPathForCell:sender];
+        NSLog(@"Identificada la celda que envía");
+        if(indice){
+            NSLog(@"Identificado el indice");
+            if([segue.identifier isEqualToString:@"Detalle Drogas"]){
+                NSLog(@"Identificada la transición");
+                if([segue.destinationViewController isKindOfClass:[detalleContradiccionHome class]]){
+                     NSLog(@"Identificado el controlador");
+                    NSString *subtitulo = [[arregloDatos objectAtIndex:indice.row] objectForKey:ELEMENTO_ARREGLO_PARA_TITULO];
+                    NSLog(@"%@",subtitulo);
+                    [self configuraVista:segue.destinationViewController contitulo:subtitulo];
+                }
+            }
+        }
+    }
     
 }
 
+-(void)configuraVista:(detalleContradiccionHome *)vista contitulo:(NSString *)eltitulo{
 
+  
+        NSLog(@"Configurando el texto");
+            [vista configurarTituloConTexto:eltitulo];
+    vista.title = eltitulo;
+    
+}
 
 
 /*

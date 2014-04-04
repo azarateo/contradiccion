@@ -54,7 +54,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rNL-qA-p5P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2121" y="-138"/>
+            <point key="canvasLocation" x="2141" y="-437"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0G5-th-8SI">
@@ -92,7 +92,7 @@
             </objects>
             <point key="canvasLocation" x="1549" y="-2273"/>
         </scene>
-        <!--Contradiccion HomeTVC - Sustancias psicoactivas-->
+        <!--Contradiccion HomeTVC - Histórico emergencias-->
         <scene sceneID="d7f-Xk-hLz">
             <objects>
                 <tableViewController id="e7T-97-nvw" customClass="contradiccionHomeTVC" sceneMemberID="viewController">
@@ -121,21 +121,21 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NI0-du-qaE">
-                                            <rect key="frame" x="79" y="3" width="34" height="22"/>
+                                            <rect key="frame" x="73" y="3" width="34" height="22"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5I1-ul-taH">
-                                            <rect key="frame" x="79" y="25" width="43" height="15"/>
+                                            <rect key="frame" x="73" y="25" width="43" height="15"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="mariguana.png" id="gtC-7h-UPO">
-                                            <rect key="frame" x="15" y="0.0" width="49" height="43"/>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="emergency-icon.png" id="gtC-7h-UPO">
+                                            <rect key="frame" x="15" y="0.0" width="43" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
@@ -150,7 +150,7 @@
                             <outlet property="delegate" destination="e7T-97-nvw" id="dy5-Bo-FEF"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Sustancias psicoactivas" id="xr0-pZ-Vr7"/>
+                    <navigationItem key="navigationItem" title="Histórico emergencias" id="xr0-pZ-Vr7"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="dYM-bt-6am" id="fyd-Kn-UiG"/>
                         <outlet property="tablaDatos" destination="vJp-tc-4Nt" id="eOB-IJ-XG0"/>
@@ -166,12 +166,12 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="2300" y="-1537"/>
+            <point key="canvasLocation" x="1786" y="-1542"/>
         </scene>
-        <!--View Controller-->
+        <!--Detalle Contradiccion Home-->
         <scene sceneID="LLu-H0-Ch2">
             <objects>
-                <viewController id="gMz-Hz-QjT" sceneMemberID="viewController">
+                <viewController id="gMz-Hz-QjT" customClass="detalleContradiccionHome" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bql-zm-NHd"/>
                         <viewControllerLayoutGuide type="bottom" id="811-Ix-stU"/>
@@ -179,13 +179,25 @@
                     <view key="view" contentMode="scaleToFill" id="JEy-W9-ob1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJg-ho-7BV">
+                                <rect key="frame" x="101" y="114" width="165" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="0JN-sh-Vkw"/>
+                    <connections>
+                        <outlet property="titulo" destination="CJg-ho-7BV" id="Ems-cO-VhB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lfn-6o-UXq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2825" y="-1531"/>
+            <point key="canvasLocation" x="2499" y="-1601"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Zff-Nd-hQk">
@@ -266,7 +278,7 @@
                                     <attributedString key="attributedTitle"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Aff-U2-eTw" kind="push" id="WCJ-wt-FHB"/>
+                                    <segue destination="e7T-97-nvw" kind="push" id="xqX-b8-h5y"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tvJ-F2-0ZL">
@@ -889,25 +901,6 @@
             </objects>
             <point key="canvasLocation" x="331" y="182"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Z70-AC-QWc">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Aff-U2-eTw" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="0Ha-tl-wR0"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yE4-rS-JiM">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="e7T-97-nvw" kind="relationship" relationship="rootViewController" id="eYi-dk-VrI"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cEF-4X-dWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1774" y="-1537"/>
-        </scene>
     </scenes>
     <resources>
         <image name="APOYATE.png" width="302" height="322"/>
@@ -919,13 +912,13 @@
         <image name="drogas.png" width="719" height="790"/>
         <image name="efectos.png" width="436" height="300"/>
         <image name="efectos2.png" width="520" height="426"/>
+        <image name="emergency-icon.png" width="100" height="100"/>
         <image name="emergentes.png" width="216" height="213"/>
         <image name="estadi.png" width="30" height="30"/>
         <image name="evolution300.png" width="300" height="152"/>
         <image name="home.png" width="205" height="199"/>
         <image name="mapa20.png" width="20" height="20"/>
         <image name="mariguana efecto emocional.png" width="264" height="275"/>
-        <image name="mariguana.png" width="111" height="97"/>
         <image name="natural.png" width="213" height="206"/>
         <image name="nps.png" width="216" height="195"/>
         <image name="sinteticas.png" width="206" height="210"/>

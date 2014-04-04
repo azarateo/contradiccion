@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9577D9018EEF4EC0093E906 /* emergency-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A9577D8F18EEF4EC0093E906 /* emergency-icon.png */; };
+		A9577D9318EEF7A00093E906 /* detalleContradiccionHome.m in Sources */ = {isa = PBXBuildFile; fileRef = A9577D9218EEF7A00093E906 /* detalleContradiccionHome.m */; };
 		A9CD60CF18ED99770054F851 /* alucilogenas.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60AF18ED99770054F851 /* alucilogenas.png */; };
 		A9CD60D018ED99770054F851 /* APOYATE.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60B018ED99770054F851 /* APOYATE.png */; };
 		A9CD60D118ED99770054F851 /* CONTR.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60B118ED99770054F851 /* CONTR.jpg */; };
@@ -72,6 +74,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A9577D8F18EEF4EC0093E906 /* emergency-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emergency-icon.png"; sourceTree = "<group>"; };
+		A9577D9118EEF7A00093E906 /* detalleContradiccionHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detalleContradiccionHome.h; sourceTree = "<group>"; };
+		A9577D9218EEF7A00093E906 /* detalleContradiccionHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detalleContradiccionHome.m; sourceTree = "<group>"; };
 		A9CD60AF18ED99770054F851 /* alucilogenas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alucilogenas.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/alucilogenas.png"; sourceTree = "<group>"; };
 		A9CD60B018ED99770054F851 /* APOYATE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = APOYATE.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/APOYATE.png"; sourceTree = "<group>"; };
 		A9CD60B118ED99770054F851 /* CONTR.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = CONTR.jpg; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/CONTR.jpg"; sourceTree = "<group>"; };
@@ -163,6 +168,7 @@
 		FC6E61CA18E8B42600D3BB95 /* imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				A9577D8F18EEF4EC0093E906 /* emergency-icon.png */,
 				A9CD60AF18ED99770054F851 /* alucilogenas.png */,
 				A9CD60B018ED99770054F851 /* APOYATE.png */,
 				A9CD60B118ED99770054F851 /* CONTR.jpg */,
@@ -250,6 +256,8 @@
 				FC3681E218E7D29100C60961 /* contradiccionTableViewController2.m */,
 				FC6E61CB18E8B45F00D3BB95 /* contradiccionViewController.h */,
 				FC6E61CC18E8B45F00D3BB95 /* contradiccionViewController.m */,
+				A9577D9118EEF7A00093E906 /* detalleContradiccionHome.h */,
+				A9577D9218EEF7A00093E906 /* detalleContradiccionHome.m */,
 			);
 			path = contradiccion;
 			sourceTree = "<group>";
@@ -392,6 +400,7 @@
 				FCD0885C18E73B7100C294F3 /* Main_iPhone.storyboard in Resources */,
 				A9CD60E618ED99770054F851 /* MAPAFINAL.png in Resources */,
 				FCD0885318E73B7100C294F3 /* InfoPlist.strings in Resources */,
+				A9577D9018EEF4EC0093E906 /* emergency-icon.png in Resources */,
 				A9CD60EA18ED99770054F851 /* nps.png in Resources */,
 				A9CD60DD18ED99770054F851 /* ICONO.png in Resources */,
 				A9CD60D218ED99770054F851 /* drogas.png in Resources */,
@@ -415,6 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9CD60F118EDB4630054F851 /* ejemploTVCTableViewController.m in Sources */,
+				A9577D9318EEF7A00093E906 /* detalleContradiccionHome.m in Sources */,
 				FCD0888518E73D1400C294F3 /* contradiccionHomeTVC.m in Sources */,
 				FCD0885518E73B7100C294F3 /* main.m in Sources */,
 				FCD0885918E73B7100C294F3 /* contradiccionAppDelegate.m in Sources */,
