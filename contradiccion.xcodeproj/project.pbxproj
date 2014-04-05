@@ -9,38 +9,6 @@
 /* Begin PBXBuildFile section */
 		A9577D9018EEF4EC0093E906 /* emergency-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A9577D8F18EEF4EC0093E906 /* emergency-icon.png */; };
 		A9577D9318EEF7A00093E906 /* detalleContradiccionHome.m in Sources */ = {isa = PBXBuildFile; fileRef = A9577D9218EEF7A00093E906 /* detalleContradiccionHome.m */; };
-		A9CD60CF18ED99770054F851 /* alucilogenas.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60AF18ED99770054F851 /* alucilogenas.png */; };
-		A9CD60D018ED99770054F851 /* APOYATE.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60B018ED99770054F851 /* APOYATE.png */; };
-		A9CD60D118ED99770054F851 /* CONTR.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60B118ED99770054F851 /* CONTR.jpg */; };
-		A9CD60D218ED99770054F851 /* drogas.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60B218ED99770054F851 /* drogas.png */; };
-		A9CD60D318ED99770054F851 /* efectos.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60B318ED99770054F851 /* efectos.png */; };
-		A9CD60D418ED99770054F851 /* efectos2.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60B418ED99770054F851 /* efectos2.png */; };
-		A9CD60D518ED99770054F851 /* emergentes.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60B518ED99770054F851 /* emergentes.png */; };
-		A9CD60D618ED99770054F851 /* estadi.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60B618ED99770054F851 /* estadi.png */; };
-		A9CD60D718ED99770054F851 /* estimulantes.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60B718ED99770054F851 /* estimulantes.png */; };
-		A9CD60D818ED99770054F851 /* evolution.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60B818ED99770054F851 /* evolution.png */; };
-		A9CD60D918ED99770054F851 /* evolution300.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60B918ED99770054F851 /* evolution300.png */; };
-		A9CD60DA18ED99770054F851 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60BA18ED99770054F851 /* help.png */; };
-		A9CD60DB18ED99770054F851 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60BB18ED99770054F851 /* home.png */; };
-		A9CD60DC18ED99770054F851 /* iconmonstr-pie-chart-2-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60BC18ED99770054F851 /* iconmonstr-pie-chart-2-icon.png */; };
-		A9CD60DD18ED99770054F851 /* ICONO.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60BD18ED99770054F851 /* ICONO.png */; };
-		A9CD60DE18ED99770054F851 /* ICONO29.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60BE18ED99770054F851 /* ICONO29.png */; };
-		A9CD60DF18ED99770054F851 /* ICONO40.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60BF18ED99770054F851 /* ICONO40.png */; };
-		A9CD60E018ED99770054F851 /* ICONO58.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60C018ED99770054F851 /* ICONO58.png */; };
-		A9CD60E118ED99770054F851 /* ICONO76.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60C118ED99770054F851 /* ICONO76.png */; };
-		A9CD60E218ED99770054F851 /* ICONO80.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60C218ED99770054F851 /* ICONO80.png */; };
-		A9CD60E318ED99770054F851 /* ICONO120.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60C318ED99770054F851 /* ICONO120.png */; };
-		A9CD60E418ED99770054F851 /* ICONO152.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60C418ED99770054F851 /* ICONO152.png */; };
-		A9CD60E518ED99770054F851 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60C518ED99770054F851 /* map.png */; };
-		A9CD60E618ED99770054F851 /* MAPAFINAL.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60C618ED99770054F851 /* MAPAFINAL.png */; };
-		A9CD60E718ED99770054F851 /* mariguana efecto emocional.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60C718ED99770054F851 /* mariguana efecto emocional.png */; };
-		A9CD60E818ED99770054F851 /* mariguana.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60C818ED99770054F851 /* mariguana.png */; };
-		A9CD60E918ED99770054F851 /* natural.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60C918ED99770054F851 /* natural.png */; };
-		A9CD60EA18ED99770054F851 /* nps.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60CA18ED99770054F851 /* nps.png */; };
-		A9CD60EB18ED99770054F851 /* PAGINAAYUDA.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60CB18ED99770054F851 /* PAGINAAYUDA.png */; };
-		A9CD60EC18ED99770054F851 /* programa.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60CC18ED99770054F851 /* programa.png */; };
-		A9CD60ED18ED99770054F851 /* sinteticas.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60CD18ED99770054F851 /* sinteticas.png */; };
-		A9CD60EE18ED99770054F851 /* VOTO.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CD60CE18ED99770054F851 /* VOTO.png */; };
 		A9CD60F118EDB4630054F851 /* ejemploTVCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CD60F018EDB4630054F851 /* ejemploTVCTableViewController.m */; };
 		FC3681D218E7C31300C60961 /* contradiccionMapVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3681D118E7C31300C60961 /* contradiccionMapVCViewController.m */; };
 		FC3681D418E7C34100C60961 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3681D318E7C34100C60961 /* MapKit.framework */; };
@@ -61,6 +29,32 @@
 		FCD0887818E73B7100C294F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCD0887618E73B7100C294F3 /* InfoPlist.strings */; };
 		FCD0887A18E73B7100C294F3 /* contradiccionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD0887918E73B7100C294F3 /* contradiccionTests.m */; };
 		FCD0888518E73D1400C294F3 /* contradiccionHomeTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD0888418E73D1400C294F3 /* contradiccionHomeTVC.m */; };
+		FCFAD57218F07E9E0095A93E /* mariguana.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD56C18F07E9E0095A93E /* mariguana.png */; };
+		FCFAD57318F07E9E0095A93E /* CONTR.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD56D18F07E9E0095A93E /* CONTR.jpg */; };
+		FCFAD57418F07E9E0095A93E /* programa.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD56E18F07E9E0095A93E /* programa.png */; };
+		FCFAD57518F07E9E0095A93E /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD56F18F07E9E0095A93E /* home.png */; };
+		FCFAD57618F07E9E0095A93E /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD57018F07E9E0095A93E /* help.png */; };
+		FCFAD57718F07E9E0095A93E /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD57118F07E9E0095A93E /* map.png */; };
+		FCFAD57C18F07EAC0095A93E /* APOYATE.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD57818F07EAC0095A93E /* APOYATE.png */; };
+		FCFAD57D18F07EAC0095A93E /* MAPAFINAL.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD57918F07EAC0095A93E /* MAPAFINAL.png */; };
+		FCFAD57E18F07EAC0095A93E /* VOTO.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD57A18F07EAC0095A93E /* VOTO.png */; };
+		FCFAD57F18F07EAC0095A93E /* drogas.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD57B18F07EAC0095A93E /* drogas.png */; };
+		FCFAD58518F07EC80095A93E /* alucilogenas.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD58018F07EC80095A93E /* alucilogenas.png */; };
+		FCFAD58618F07EC80095A93E /* emergentes.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD58118F07EC80095A93E /* emergentes.png */; };
+		FCFAD58718F07EC80095A93E /* estimulantes.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD58218F07EC80095A93E /* estimulantes.png */; };
+		FCFAD58818F07EC80095A93E /* sinteticas.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD58318F07EC80095A93E /* sinteticas.png */; };
+		FCFAD58918F07EC80095A93E /* natural.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD58418F07EC80095A93E /* natural.png */; };
+		FCFAD58B18F07ED20095A93E /* nps.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD58A18F07ED20095A93E /* nps.png */; };
+		FCFAD59518F07EF30095A93E /* mariguana efecto emocional.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD58C18F07EF30095A93E /* mariguana efecto emocional.png */; };
+		FCFAD59618F07EF30095A93E /* ICONO.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD58D18F07EF30095A93E /* ICONO.png */; };
+		FCFAD59718F07EF30095A93E /* ICONO80.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD58E18F07EF30095A93E /* ICONO80.png */; };
+		FCFAD59818F07EF30095A93E /* ICONO120.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD58F18F07EF30095A93E /* ICONO120.png */; };
+		FCFAD59918F07EF30095A93E /* ICONO29.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD59018F07EF30095A93E /* ICONO29.png */; };
+		FCFAD59A18F07EF30095A93E /* ICONO58.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD59118F07EF30095A93E /* ICONO58.png */; };
+		FCFAD59B18F07EF30095A93E /* ICONO40.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD59218F07EF30095A93E /* ICONO40.png */; };
+		FCFAD59C18F07EF30095A93E /* ICONO76.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD59318F07EF30095A93E /* ICONO76.png */; };
+		FCFAD59D18F07EF30095A93E /* ICONO152.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD59418F07EF30095A93E /* ICONO152.png */; };
+		FCFAD59F18F07F0B0095A93E /* PAGINAAYUDA.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAD59E18F07F0B0095A93E /* PAGINAAYUDA.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,38 +71,6 @@
 		A9577D8F18EEF4EC0093E906 /* emergency-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emergency-icon.png"; sourceTree = "<group>"; };
 		A9577D9118EEF7A00093E906 /* detalleContradiccionHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detalleContradiccionHome.h; sourceTree = "<group>"; };
 		A9577D9218EEF7A00093E906 /* detalleContradiccionHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detalleContradiccionHome.m; sourceTree = "<group>"; };
-		A9CD60AF18ED99770054F851 /* alucilogenas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alucilogenas.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/alucilogenas.png"; sourceTree = "<group>"; };
-		A9CD60B018ED99770054F851 /* APOYATE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = APOYATE.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/APOYATE.png"; sourceTree = "<group>"; };
-		A9CD60B118ED99770054F851 /* CONTR.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = CONTR.jpg; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/CONTR.jpg"; sourceTree = "<group>"; };
-		A9CD60B218ED99770054F851 /* drogas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = drogas.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/drogas.png"; sourceTree = "<group>"; };
-		A9CD60B318ED99770054F851 /* efectos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = efectos.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/efectos.png"; sourceTree = "<group>"; };
-		A9CD60B418ED99770054F851 /* efectos2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = efectos2.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/efectos2.png"; sourceTree = "<group>"; };
-		A9CD60B518ED99770054F851 /* emergentes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = emergentes.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/emergentes.png"; sourceTree = "<group>"; };
-		A9CD60B618ED99770054F851 /* estadi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = estadi.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/estadi.png"; sourceTree = "<group>"; };
-		A9CD60B718ED99770054F851 /* estimulantes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = estimulantes.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/estimulantes.png"; sourceTree = "<group>"; };
-		A9CD60B818ED99770054F851 /* evolution.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = evolution.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/evolution.png"; sourceTree = "<group>"; };
-		A9CD60B918ED99770054F851 /* evolution300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = evolution300.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/evolution300.png"; sourceTree = "<group>"; };
-		A9CD60BA18ED99770054F851 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = help.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/help.png"; sourceTree = "<group>"; };
-		A9CD60BB18ED99770054F851 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/home.png"; sourceTree = "<group>"; };
-		A9CD60BC18ED99770054F851 /* iconmonstr-pie-chart-2-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iconmonstr-pie-chart-2-icon.png"; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/iconmonstr-pie-chart-2-icon.png"; sourceTree = "<group>"; };
-		A9CD60BD18ED99770054F851 /* ICONO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ICONO.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/ICONO.png"; sourceTree = "<group>"; };
-		A9CD60BE18ED99770054F851 /* ICONO29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ICONO29.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/ICONO29.png"; sourceTree = "<group>"; };
-		A9CD60BF18ED99770054F851 /* ICONO40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ICONO40.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/ICONO40.png"; sourceTree = "<group>"; };
-		A9CD60C018ED99770054F851 /* ICONO58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ICONO58.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/ICONO58.png"; sourceTree = "<group>"; };
-		A9CD60C118ED99770054F851 /* ICONO76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ICONO76.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/ICONO76.png"; sourceTree = "<group>"; };
-		A9CD60C218ED99770054F851 /* ICONO80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ICONO80.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/ICONO80.png"; sourceTree = "<group>"; };
-		A9CD60C318ED99770054F851 /* ICONO120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ICONO120.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/ICONO120.png"; sourceTree = "<group>"; };
-		A9CD60C418ED99770054F851 /* ICONO152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ICONO152.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/ICONO152.png"; sourceTree = "<group>"; };
-		A9CD60C518ED99770054F851 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/map.png"; sourceTree = "<group>"; };
-		A9CD60C618ED99770054F851 /* MAPAFINAL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MAPAFINAL.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/MAPAFINAL.png"; sourceTree = "<group>"; };
-		A9CD60C718ED99770054F851 /* mariguana efecto emocional.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mariguana efecto emocional.png"; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/mariguana efecto emocional.png"; sourceTree = "<group>"; };
-		A9CD60C818ED99770054F851 /* mariguana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mariguana.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/mariguana.png"; sourceTree = "<group>"; };
-		A9CD60C918ED99770054F851 /* natural.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = natural.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/natural.png"; sourceTree = "<group>"; };
-		A9CD60CA18ED99770054F851 /* nps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nps.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/nps.png"; sourceTree = "<group>"; };
-		A9CD60CB18ED99770054F851 /* PAGINAAYUDA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PAGINAAYUDA.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/PAGINAAYUDA.png"; sourceTree = "<group>"; };
-		A9CD60CC18ED99770054F851 /* programa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = programa.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/programa.png"; sourceTree = "<group>"; };
-		A9CD60CD18ED99770054F851 /* sinteticas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sinteticas.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/sinteticas.png"; sourceTree = "<group>"; };
-		A9CD60CE18ED99770054F851 /* VOTO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VOTO.png; path = "../../../Google Drive/PERSONAL/C4C/contradiccion/contradiccion/imagenes/VOTO.png"; sourceTree = "<group>"; };
 		A9CD60EF18EDB4630054F851 /* ejemploTVCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ejemploTVCTableViewController.h; sourceTree = "<group>"; };
 		A9CD60F018EDB4630054F851 /* ejemploTVCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ejemploTVCTableViewController.m; sourceTree = "<group>"; };
 		FC3681D018E7C31300C60961 /* contradiccionMapVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = contradiccionMapVCViewController.h; sourceTree = "<group>"; };
@@ -138,6 +100,32 @@
 		FCD0887918E73B7100C294F3 /* contradiccionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = contradiccionTests.m; sourceTree = "<group>"; };
 		FCD0888318E73D1400C294F3 /* contradiccionHomeTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = contradiccionHomeTVC.h; sourceTree = "<group>"; };
 		FCD0888418E73D1400C294F3 /* contradiccionHomeTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = contradiccionHomeTVC.m; sourceTree = "<group>"; };
+		FCFAD56C18F07E9E0095A93E /* mariguana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mariguana.png; sourceTree = "<group>"; };
+		FCFAD56D18F07E9E0095A93E /* CONTR.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CONTR.jpg; sourceTree = "<group>"; };
+		FCFAD56E18F07E9E0095A93E /* programa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = programa.png; sourceTree = "<group>"; };
+		FCFAD56F18F07E9E0095A93E /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		FCFAD57018F07E9E0095A93E /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
+		FCFAD57118F07E9E0095A93E /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		FCFAD57818F07EAC0095A93E /* APOYATE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = APOYATE.png; sourceTree = "<group>"; };
+		FCFAD57918F07EAC0095A93E /* MAPAFINAL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MAPAFINAL.png; sourceTree = "<group>"; };
+		FCFAD57A18F07EAC0095A93E /* VOTO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VOTO.png; sourceTree = "<group>"; };
+		FCFAD57B18F07EAC0095A93E /* drogas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drogas.png; sourceTree = "<group>"; };
+		FCFAD58018F07EC80095A93E /* alucilogenas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alucilogenas.png; sourceTree = "<group>"; };
+		FCFAD58118F07EC80095A93E /* emergentes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emergentes.png; sourceTree = "<group>"; };
+		FCFAD58218F07EC80095A93E /* estimulantes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = estimulantes.png; sourceTree = "<group>"; };
+		FCFAD58318F07EC80095A93E /* sinteticas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sinteticas.png; sourceTree = "<group>"; };
+		FCFAD58418F07EC80095A93E /* natural.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = natural.png; sourceTree = "<group>"; };
+		FCFAD58A18F07ED20095A93E /* nps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nps.png; sourceTree = "<group>"; };
+		FCFAD58C18F07EF30095A93E /* mariguana efecto emocional.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mariguana efecto emocional.png"; sourceTree = "<group>"; };
+		FCFAD58D18F07EF30095A93E /* ICONO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICONO.png; sourceTree = "<group>"; };
+		FCFAD58E18F07EF30095A93E /* ICONO80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICONO80.png; sourceTree = "<group>"; };
+		FCFAD58F18F07EF30095A93E /* ICONO120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICONO120.png; sourceTree = "<group>"; };
+		FCFAD59018F07EF30095A93E /* ICONO29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICONO29.png; sourceTree = "<group>"; };
+		FCFAD59118F07EF30095A93E /* ICONO58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICONO58.png; sourceTree = "<group>"; };
+		FCFAD59218F07EF30095A93E /* ICONO40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICONO40.png; sourceTree = "<group>"; };
+		FCFAD59318F07EF30095A93E /* ICONO76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICONO76.png; sourceTree = "<group>"; };
+		FCFAD59418F07EF30095A93E /* ICONO152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICONO152.png; sourceTree = "<group>"; };
+		FCFAD59E18F07F0B0095A93E /* PAGINAAYUDA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PAGINAAYUDA.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,39 +156,33 @@
 		FC6E61CA18E8B42600D3BB95 /* imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				FCFAD58A18F07ED20095A93E /* nps.png */,
+				FCFAD58018F07EC80095A93E /* alucilogenas.png */,
+				FCFAD58118F07EC80095A93E /* emergentes.png */,
+				FCFAD58218F07EC80095A93E /* estimulantes.png */,
+				FCFAD58318F07EC80095A93E /* sinteticas.png */,
+				FCFAD58418F07EC80095A93E /* natural.png */,
 				A9577D8F18EEF4EC0093E906 /* emergency-icon.png */,
-				A9CD60AF18ED99770054F851 /* alucilogenas.png */,
-				A9CD60B018ED99770054F851 /* APOYATE.png */,
-				A9CD60B118ED99770054F851 /* CONTR.jpg */,
-				A9CD60B218ED99770054F851 /* drogas.png */,
-				A9CD60B318ED99770054F851 /* efectos.png */,
-				A9CD60B418ED99770054F851 /* efectos2.png */,
-				A9CD60B518ED99770054F851 /* emergentes.png */,
-				A9CD60B618ED99770054F851 /* estadi.png */,
-				A9CD60B718ED99770054F851 /* estimulantes.png */,
-				A9CD60B818ED99770054F851 /* evolution.png */,
-				A9CD60B918ED99770054F851 /* evolution300.png */,
-				A9CD60BA18ED99770054F851 /* help.png */,
-				A9CD60BB18ED99770054F851 /* home.png */,
-				A9CD60BC18ED99770054F851 /* iconmonstr-pie-chart-2-icon.png */,
-				A9CD60BD18ED99770054F851 /* ICONO.png */,
-				A9CD60BE18ED99770054F851 /* ICONO29.png */,
-				A9CD60BF18ED99770054F851 /* ICONO40.png */,
-				A9CD60C018ED99770054F851 /* ICONO58.png */,
-				A9CD60C118ED99770054F851 /* ICONO76.png */,
-				A9CD60C218ED99770054F851 /* ICONO80.png */,
-				A9CD60C318ED99770054F851 /* ICONO120.png */,
-				A9CD60C418ED99770054F851 /* ICONO152.png */,
-				A9CD60C518ED99770054F851 /* map.png */,
-				A9CD60C618ED99770054F851 /* MAPAFINAL.png */,
-				A9CD60C718ED99770054F851 /* mariguana efecto emocional.png */,
-				A9CD60C818ED99770054F851 /* mariguana.png */,
-				A9CD60C918ED99770054F851 /* natural.png */,
-				A9CD60CA18ED99770054F851 /* nps.png */,
-				A9CD60CB18ED99770054F851 /* PAGINAAYUDA.png */,
-				A9CD60CC18ED99770054F851 /* programa.png */,
-				A9CD60CD18ED99770054F851 /* sinteticas.png */,
-				A9CD60CE18ED99770054F851 /* VOTO.png */,
+				FCFAD56C18F07E9E0095A93E /* mariguana.png */,
+				FCFAD56D18F07E9E0095A93E /* CONTR.jpg */,
+				FCFAD56E18F07E9E0095A93E /* programa.png */,
+				FCFAD56F18F07E9E0095A93E /* home.png */,
+				FCFAD57018F07E9E0095A93E /* help.png */,
+				FCFAD57118F07E9E0095A93E /* map.png */,
+				FCFAD57818F07EAC0095A93E /* APOYATE.png */,
+				FCFAD57918F07EAC0095A93E /* MAPAFINAL.png */,
+				FCFAD57A18F07EAC0095A93E /* VOTO.png */,
+				FCFAD57B18F07EAC0095A93E /* drogas.png */,
+				FCFAD58C18F07EF30095A93E /* mariguana efecto emocional.png */,
+				FCFAD58D18F07EF30095A93E /* ICONO.png */,
+				FCFAD58E18F07EF30095A93E /* ICONO80.png */,
+				FCFAD58F18F07EF30095A93E /* ICONO120.png */,
+				FCFAD59018F07EF30095A93E /* ICONO29.png */,
+				FCFAD59118F07EF30095A93E /* ICONO58.png */,
+				FCFAD59218F07EF30095A93E /* ICONO40.png */,
+				FCFAD59318F07EF30095A93E /* ICONO76.png */,
+				FCFAD59418F07EF30095A93E /* ICONO152.png */,
+				FCFAD59E18F07F0B0095A93E /* PAGINAAYUDA.png */,
 			);
 			name = imagenes;
 			sourceTree = "<group>";
@@ -368,43 +350,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9CD60DE18ED99770054F851 /* ICONO29.png in Resources */,
-				A9CD60E318ED99770054F851 /* ICONO120.png in Resources */,
-				A9CD60E218ED99770054F851 /* ICONO80.png in Resources */,
-				A9CD60D018ED99770054F851 /* APOYATE.png in Resources */,
-				A9CD60E518ED99770054F851 /* map.png in Resources */,
-				A9CD60E118ED99770054F851 /* ICONO76.png in Resources */,
-				A9CD60CF18ED99770054F851 /* alucilogenas.png in Resources */,
-				A9CD60D618ED99770054F851 /* estadi.png in Resources */,
-				A9CD60D818ED99770054F851 /* evolution.png in Resources */,
-				A9CD60ED18ED99770054F851 /* sinteticas.png in Resources */,
-				A9CD60D318ED99770054F851 /* efectos.png in Resources */,
+				FCFAD57718F07E9E0095A93E /* map.png in Resources */,
+				FCFAD59D18F07EF30095A93E /* ICONO152.png in Resources */,
+				FCFAD58618F07EC80095A93E /* emergentes.png in Resources */,
+				FCFAD59918F07EF30095A93E /* ICONO29.png in Resources */,
+				FCFAD58918F07EC80095A93E /* natural.png in Resources */,
+				FCFAD57518F07E9E0095A93E /* home.png in Resources */,
+				FCFAD57C18F07EAC0095A93E /* APOYATE.png in Resources */,
+				FCFAD58518F07EC80095A93E /* alucilogenas.png in Resources */,
+				FCFAD57218F07E9E0095A93E /* mariguana.png in Resources */,
+				FCFAD57E18F07EAC0095A93E /* VOTO.png in Resources */,
+				FCFAD59B18F07EF30095A93E /* ICONO40.png in Resources */,
 				FCD0885F18E73B7100C294F3 /* Main_iPad.storyboard in Resources */,
-				A9CD60E718ED99770054F851 /* mariguana efecto emocional.png in Resources */,
-				A9CD60DF18ED99770054F851 /* ICONO40.png in Resources */,
-				A9CD60EC18ED99770054F851 /* programa.png in Resources */,
-				A9CD60E818ED99770054F851 /* mariguana.png in Resources */,
-				A9CD60D418ED99770054F851 /* efectos2.png in Resources */,
+				FCFAD58818F07EC80095A93E /* sinteticas.png in Resources */,
+				FCFAD59518F07EF30095A93E /* mariguana efecto emocional.png in Resources */,
 				FCD0886718E73B7100C294F3 /* Images.xcassets in Resources */,
-				A9CD60D118ED99770054F851 /* CONTR.jpg in Resources */,
-				A9CD60E018ED99770054F851 /* ICONO58.png in Resources */,
-				A9CD60D518ED99770054F851 /* emergentes.png in Resources */,
-				A9CD60D718ED99770054F851 /* estimulantes.png in Resources */,
-				A9CD60D918ED99770054F851 /* evolution300.png in Resources */,
-				A9CD60DB18ED99770054F851 /* home.png in Resources */,
-				A9CD60EB18ED99770054F851 /* PAGINAAYUDA.png in Resources */,
-				A9CD60E918ED99770054F851 /* natural.png in Resources */,
-				A9CD60DA18ED99770054F851 /* help.png in Resources */,
-				A9CD60EE18ED99770054F851 /* VOTO.png in Resources */,
-				A9CD60E418ED99770054F851 /* ICONO152.png in Resources */,
+				FCFAD59818F07EF30095A93E /* ICONO120.png in Resources */,
+				FCFAD57618F07E9E0095A93E /* help.png in Resources */,
+				FCFAD57D18F07EAC0095A93E /* MAPAFINAL.png in Resources */,
+				FCFAD59F18F07F0B0095A93E /* PAGINAAYUDA.png in Resources */,
+				FCFAD57418F07E9E0095A93E /* programa.png in Resources */,
+				FCFAD57F18F07EAC0095A93E /* drogas.png in Resources */,
+				FCFAD59C18F07EF30095A93E /* ICONO76.png in Resources */,
 				FCD0885C18E73B7100C294F3 /* Main_iPhone.storyboard in Resources */,
-				A9CD60E618ED99770054F851 /* MAPAFINAL.png in Resources */,
 				FCD0885318E73B7100C294F3 /* InfoPlist.strings in Resources */,
+				FCFAD59618F07EF30095A93E /* ICONO.png in Resources */,
 				A9577D9018EEF4EC0093E906 /* emergency-icon.png in Resources */,
-				A9CD60EA18ED99770054F851 /* nps.png in Resources */,
-				A9CD60DD18ED99770054F851 /* ICONO.png in Resources */,
-				A9CD60D218ED99770054F851 /* drogas.png in Resources */,
-				A9CD60DC18ED99770054F851 /* iconmonstr-pie-chart-2-icon.png in Resources */,
+				FCFAD58718F07EC80095A93E /* estimulantes.png in Resources */,
+				FCFAD59A18F07EF30095A93E /* ICONO58.png in Resources */,
+				FCFAD57318F07E9E0095A93E /* CONTR.jpg in Resources */,
+				FCFAD59718F07EF30095A93E /* ICONO80.png in Resources */,
+				FCFAD58B18F07ED20095A93E /* nps.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
