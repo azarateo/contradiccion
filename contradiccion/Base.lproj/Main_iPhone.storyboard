@@ -101,8 +101,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="separatorColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="GGL-KG-GJP">
+                            <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="e7T-97-nvw" id="J1V-nm-DV6"/>
+                            </connections>
+                        </searchBar>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BDc-NI-2xz">
-                            <rect key="frame" x="0.0" y="173" width="320" height="30"/>
+                            <rect key="frame" x="0.0" y="558" width="320" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Estadísticas" image="estadi.png">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -114,7 +122,7 @@
                         </button>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="elementoHome" textLabel="NI0-du-qaE" detailTextLabel="5I1-ul-taH" imageView="gtC-7h-UPO" style="IBUITableViewCellStyleSubtitle" id="78N-1C-wwS">
-                                <rect key="frame" x="0.0" y="119" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="163" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="78N-1C-wwS" id="gN6-n6-agy">
                                     <rect key="frame" x="0.0" y="0.0" width="253" height="43"/>
@@ -152,7 +160,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Histórico emergencias" id="xr0-pZ-Vr7"/>
                     <connections>
-                        <outlet property="searchDisplayController" destination="dYM-bt-6am" id="fyd-Kn-UiG"/>
+                        <outlet property="searchDisplayController" destination="VXt-lH-lTR" id="GGp-Ht-hl0"/>
                         <outlet property="tablaDatos" destination="vJp-tc-4Nt" id="eOB-IJ-XG0"/>
                     </connections>
                 </tableViewController>
@@ -163,6 +171,15 @@
                         <outlet property="searchContentsController" destination="e7T-97-nvw" id="j1E-ay-ZqI"/>
                         <outlet property="searchResultsDataSource" destination="e7T-97-nvw" id="y2Y-Bc-0JQ"/>
                         <outlet property="searchResultsDelegate" destination="e7T-97-nvw" id="LH3-J9-eWH"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="VXt-lH-lTR">
+                    <connections>
+                        <outlet property="delegate" destination="e7T-97-nvw" id="2f2-Ed-NY9"/>
+                        <outlet property="searchBar" destination="GGL-KG-GJP" id="0ar-L4-Br9"/>
+                        <outlet property="searchContentsController" destination="e7T-97-nvw" id="zdu-5a-dgQ"/>
+                        <outlet property="searchResultsDataSource" destination="e7T-97-nvw" id="dIV-kO-UQe"/>
+                        <outlet property="searchResultsDelegate" destination="e7T-97-nvw" id="PGN-TE-P6J"/>
                     </connections>
                 </searchDisplayController>
             </objects>
@@ -181,11 +198,23 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zr3-Le-NGg">
-                                <rect key="frame" x="36" y="89" width="241" height="30"/>
+                                <rect key="frame" x="36" y="89" width="244" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dvC-7d-Xeo">
+                                <rect key="frame" x="36" y="271" width="250" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0XH-ob-hmy">
+                                <rect key="frame" x="36" y="127" width="244" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
