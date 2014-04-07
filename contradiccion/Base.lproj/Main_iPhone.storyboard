@@ -141,7 +141,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="gMz-Hz-QjT" kind="push" identifier="Detalle Drogas" id="Bx1-Ur-Iqc"/>
+                                    <segue destination="gMz-Hz-QjT" kind="push" identifier="Detalle" id="Bx1-Ur-Iqc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

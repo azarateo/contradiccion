@@ -14,14 +14,15 @@
 @end
 
 @implementation detalleContradiccionHome
-@synthesize textoTitulo;
+@synthesize textoTitulo = _textoTitulo;
+@synthesize tituloInicial = _tituloInicial;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
+    self = [super init];
+    _textoTitulo = @"Inicio";
+    _tituloInicial.text = _textoTitulo;
+    
     return self;
 }
 
@@ -30,8 +31,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.textoTitulo = [[NSString alloc] init];
-    self.textoTitulo = @"Texto de título inicial";
     [self actualizarUI];
     
     // Do any additional setup after loading the view.
@@ -45,7 +44,7 @@
 
 -(void)actualizarUI{
     
-          self.tituloInicial.text = textoTitulo;
+          self.tituloInicial.text = _textoTitulo;
     
 }
 

@@ -112,13 +112,15 @@
         NSLog(@"Identificada la celda que envía");
         if(indice){
             NSLog(@"Identificado el indice");
-            if([segue.identifier isEqualToString:@"Detalle Drogas"]){
+            if([segue.identifier isEqualToString:@"Detalle"]){
                 NSLog(@"Identificada la transición");
                 if([segue.destinationViewController isKindOfClass:[detalleContradiccionHome class]]){
                      NSLog(@"Identificado el controlador");
                     NSString *subtitulo = [[arregloDatos objectAtIndex:indice.row] objectForKey:ELEMENTO_ARREGLO_PARA_TITULO];
                     NSLog(@"%@",subtitulo);
+                    detalleContradiccionHome *vistaDestino = segue.destinationViewController;
                     [self configuraVista:segue.destinationViewController contitulo:subtitulo];
+                    NSLog(@"Instancia del controlador %@",vistaDestino.tituloInicial.text);
                 }
             }
         }
