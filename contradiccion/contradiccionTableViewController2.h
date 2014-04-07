@@ -1,5 +1,5 @@
 //
-//  contradiccionHomeTVC.h
+//  contradiccionTableViewController2.h
 //  contradiccion
 //
 //  Created by azarateo on 29/03/14.
@@ -8,13 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface contradiccionHomeTVC : UITableViewController{
+@interface contradiccionTableViewController2 : UITableViewController{
 
     NSMutableData *datos;
     NSMutableArray *arregloDatos;
-    NSURLConnection *coneccion;
+    NSMutableArray *losdatosreales;
     IBOutlet UITableView *tablaDatos;
-    
     
 }
 

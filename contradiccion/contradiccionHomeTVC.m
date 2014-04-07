@@ -7,95 +7,70 @@
 //
 
 #import "contradiccionHomeTVC.h"
+#import "detalleContradiccionHome.h"
 
-@interface contradiccionHomeTVC ()
 
-@end
+#pragma mark - Configuracion de constantes
+
+#define URL_DE_DESCARGA @"http://servicedatosabiertoscolombia.cloudapp.net/v1/UNGRD/emergenciastotal?$format=json&"//Url para la descarga del JSON
+#define VARIABLE_DE_DATOS_EN_JSON @"d"//Variable que contiene el arreglo que se mostrará en la tabla
+#define IDENTIFICADOR_DE_CELDA @"elementoHome"//Cadena para identificar el tipo de celda
+#define ELEMENTO_ARREGLO_PARA_TITULO @"evento"//Nombre de la llave que tiene los datos de título
+#define ELEMENTO_ARREGLO_PARA_SUBTITULO1 @"departamento"//Nombre de la llave que tiene los datos del subtítulo
+#define ELEMENTO_ARREGLO_PARA_SUBTITULO2 @"fecha"
 
 @implementation contradiccionHomeTVC
 
-
-
-
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+#pragma mark - Conneccion y descarga de datos
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    NSURL *url = [NSURL URLWithString:@"http://servicedatosabiertoscolombia.cloudapp.net/v1/Ministerio_de_Justicia/ubicacionprogramas?$format=json&"];
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;//Indica al usuario que los datos estan cargando
+    
+    //Creación de la conexión para la descarga de datos
+    NSURL *url = [NSURL URLWithString:URL_DE_DESCARGA];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    [[NSURLConnection alloc] initWithRequest:request delegate:self];
-    
-    
+    coneccion = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 }
-
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
-    NSLog(@"Conexión con servidor realizada");
+    NSLog(@"Se recibió respuesta del servidor...");
     datos = [[NSMutableData alloc] init];
 }
-
-
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
-
-    NSLog(@"Recibió datos de la conexión");
-    
-    
-    
+    //NSLog(@"descargando datos...");
         [datos appendData:data];
 }
-
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection{
-    
-    
-    NSString *datosPuros = [[NSString alloc] initWithData:datos encoding:NSUTF8StringEncoding];
-    //NSLog(@"Datos sin modificar: %@", datosPuros);
-    NSString *datosmejorados = [datosPuros substringFromIndex:5];
-    int numerodedatos = datosmejorados.length-1;
-    NSString *datosfinales = [datosmejorados substringToIndex:numerodedatos];
-    //NSLog(@"Datos modificados: %@", datosfinales);
-    NSLog(@"Paso 1");
-    NSData *losdatos = [datosfinales dataUsingEncoding:NSUTF8StringEncoding];
-    NSLog(@"Paso 2");
-
-    
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection
+{
+    NSLog(@"Terminó la carga de datos");
+    NSDictionary *diccionarioInicial = [NSJSONSerialization JSONObjectWithData:datos options: 0 error:NULL];
+    NSArray *arregloDelDiccionariodeDatos = [diccionarioInicial valueForKeyPath:VARIABLE_DE_DATOS_EN_JSON];
+    //NSLog(@"Datos del arreglo de a partir del diccionario %@",arregloDelDiccionariodeDatos);
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-    arregloDatos = [NSJSONSerialization JSONObjectWithData:losdatos options:NSJSONReadingMutableContainers|NSJSONReadingMutableLeaves error:nil];
-    
-    
-    //NSLog(@"arreglo: %@",arregloDatos);
-   
-    
+    arregloDatos = [NSMutableArray arrayWithArray:arregloDelDiccionariodeDatos];
     [tablaDatos reloadData];
     
 }
-
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
-
-    NSLog(@"Error en la descarga");
-    UIAlertView *vistaError = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Error en la descarga" delegate:nil cancelButtonTitle:@"Cancelar" otherButtonTitles:nil];
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+{
+    NSLog(@"Falló la conexión");
+    NSLog(@"Error:%@",[error debugDescription]);
+    UIAlertView *vistaError = [[UIAlertView alloc] initWithTitle:@"Error de conexión" message:@"Error en la descarga de datos" delegate:nil cancelButtonTitle:@"Cancelar" otherButtonTitles:nil];
     [vistaError show];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-    
-
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+     NSLog(@"Alerta de memoria");
 }
 
-#pragma mark - Table view data source
+#pragma mark - Configuración de datos para la tabla
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -109,73 +84,51 @@
     return [arregloDatos count];
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"Paso por aqui");
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"elementoHome" forIndexPath:indexPath];
-    cell.textLabel.text = @"Hola";
-   
     
-    //cell.textLabel.text = [[losdatosreales objectAtIndex:indexPath.row] objectForKey:@"RowKey"];
-    
-    
-    //NSDictionary *elemento = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:@"d"];
-    cell.textLabel.text = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:@"departamento"];
-    //NSLog(@"%@",[arregloDatos objectAtIndex:indexPath.row]);
-    
+    UITableViewCell *cell= [tableView dequeueReusableCellWithIdentifier:IDENTIFICADOR_DE_CELDA forIndexPath:indexPath];
+    NSString *subtitulo1 = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:ELEMENTO_ARREGLO_PARA_SUBTITULO1];
+    NSString *subtitulo2 = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:ELEMENTO_ARREGLO_PARA_SUBTITULO2];
+    NSString *subtitulo = [subtitulo1 stringByAppendingString:subtitulo2];
+    cell.textLabel.text = [[arregloDatos objectAtIndex:indexPath.row] objectForKey:ELEMENTO_ARREGLO_PARA_TITULO];
+    cell.detailTextLabel.text = subtitulo;
    
     return cell;
 }
 
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
+#pragma mark - Navegacion al detalle después de seleccionar la fila
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if([sender isKindOfClass:[UITableViewCell class]]){
+        NSIndexPath *indice = [tablaDatos indexPathForCell:sender];
+        if(indice){
+            if([segue.identifier isEqualToString:@"Detalle"]){
+                if([segue.destinationViewController isKindOfClass:[detalleContradiccionHome class]]){
+                    
+                    //Variables para el detalle
+                    NSString *titulo = [[arregloDatos objectAtIndex:indice.row] objectForKey:ELEMENTO_ARREGLO_PARA_TITULO];
+                    NSString *subtitulo = [[arregloDatos objectAtIndex:indice.row] objectForKey:ELEMENTO_ARREGLO_PARA_SUBTITULO1];
+                    
+                    //Configurar la vista de detalle
+                    detalleContradiccionHome *vistaDestino = segue.destinationViewController;
+                    [self configuraVista:vistaDestino contitulo:titulo];
+                }
+            }
+        }
+    }
+    
 }
-*/
+
+-(void)configuraVista:(detalleContradiccionHome *)vista
+            contitulo:(NSString *)eltitulo{
+    vista.textoTitulo = eltitulo;
+}
+
+
+
 
 @end
