@@ -103,57 +103,32 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    
-    
-    NSLog(@"Inicia transición");
-    
     if([sender isKindOfClass:[UITableViewCell class]]){
         NSIndexPath *indice = [tablaDatos indexPathForCell:sender];
-        NSLog(@"Identificada la celda que envía");
         if(indice){
-            NSLog(@"Identificado el indice");
             if([segue.identifier isEqualToString:@"Detalle"]){
-                NSLog(@"Identificada la transición");
                 if([segue.destinationViewController isKindOfClass:[detalleContradiccionHome class]]){
-                     NSLog(@"Identificado el controlador");
-                    NSString *subtitulo = [[arregloDatos objectAtIndex:indice.row] objectForKey:ELEMENTO_ARREGLO_PARA_TITULO];
-                    NSLog(@"%@",subtitulo);
+                    
+                    //Variables para el detalle
+                    NSString *titulo = [[arregloDatos objectAtIndex:indice.row] objectForKey:ELEMENTO_ARREGLO_PARA_TITULO];
+                    NSString *subtitulo = [[arregloDatos objectAtIndex:indice.row] objectForKey:ELEMENTO_ARREGLO_PARA_SUBTITULO1];
+                    
+                    //Configurar la vista de detalle
                     detalleContradiccionHome *vistaDestino = segue.destinationViewController;
-                    [self configuraVista:segue.destinationViewController contitulo:subtitulo];
-                    NSLog(@"Instancia del controlador %@",vistaDestino.tituloInicial.text);
+                    [self configuraVista:vistaDestino contitulo:titulo];
                 }
             }
         }
     }
-    NSLog(@"---------");
+    
 }
 
--(void)configuraVista:(detalleContradiccionHome *)vista contitulo:(NSString *)eltitulo{
-
-    NSLog(@"Inicia método de configuraVista:contitulo------------");
+-(void)configuraVista:(detalleContradiccionHome *)vista
+            contitulo:(NSString *)eltitulo{
     vista.textoTitulo = eltitulo;
-    vista.title = eltitulo;
-    [vista actualizarUI];
-    
-    
-    
 }
 
 
-/*
--(void)filterContentForSearchText:(NSString *)searchText forScope:(NSString *)scope{
-
-    NSPredicate *predicado = [NSPredicate predicateWithFormat:@"SELF beginswith[c] %@",searchText];
-    [arregloDatos filteredArrayUsingPredicate:predicado];
-
-}
-
--(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString{
-
-    [self filterContentForSearchText:searchString scope:[[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
-    return YES;
-
-}*/
 
 
 @end

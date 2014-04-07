@@ -191,7 +191,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="0JN-sh-Vkw"/>
                     <connections>
-                        <outlet property="tituloInicial" destination="zr3-Le-NGg" id="IpQ-mD-em1"/>
+                        <outlet property="campoTextoTitulo" destination="zr3-Le-NGg" id="8Wx-y1-Ydd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lfn-6o-UXq" userLabel="First Responder" sceneMemberID="firstResponder"/>
