@@ -14,9 +14,10 @@
 @end
 
 @implementation detalleContradiccionHome
-@synthesize textoTitulo;
+@synthesize titulo;
+@synthesize subtitulo;
 @synthesize campoTextoTitulo;
-
+@synthesize campoSubtitulo;
 
 
 - (void)viewDidLoad
@@ -25,7 +26,9 @@
     [self actualizarUI];
 }
 -(void)actualizarUI{
-    self.campoTextoTitulo.text = textoTitulo;
+    self.campoTextoTitulo.text = titulo;
+    self.campoSubtitulo.text = subtitulo;
+
 }
 
 

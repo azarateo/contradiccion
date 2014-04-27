@@ -10,8 +10,11 @@
 
 @interface detalleContradiccionHome : UIViewController
 
-@property (nonatomic, strong) NSString *textoTitulo;
-@property (nonatomic, strong) IBOutlet UITextField *campoTextoTitulo;
+@property (nonatomic, strong) NSString *titulo;
+@property (nonatomic, strong) NSString *subtitulo;
+@property (nonatomic, strong) IBOutlet UILabel *campoTextoTitulo;
+@property (nonatomic, strong) IBOutlet UILabel *campoSubtitulo;
+
 
 -(void)actualizarUI;
 

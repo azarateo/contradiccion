@@ -110,12 +110,12 @@
                 if([segue.destinationViewController isKindOfClass:[detalleContradiccionHome class]]){
                     
                     //Variables para el detalle
-                    NSString *titulo = [[arregloDatos objectAtIndex:indice.row] objectForKey:ELEMENTO_ARREGLO_PARA_TITULO];
-                    NSString *subtitulo = [[arregloDatos objectAtIndex:indice.row] objectForKey:ELEMENTO_ARREGLO_PARA_SUBTITULO1];
+                    NSString *eltitulo = [[arregloDatos objectAtIndex:indice.row] objectForKey:ELEMENTO_ARREGLO_PARA_TITULO];
+                    NSString *elsubtitulo = [[arregloDatos objectAtIndex:indice.row] objectForKey:ELEMENTO_ARREGLO_PARA_SUBTITULO1];
                     
                     //Configurar la vista de detalle
                     detalleContradiccionHome *vistaDestino = segue.destinationViewController;
-                    [self configuraVista:vistaDestino contitulo:titulo];
+                    [self configuraVista:vistaDestino contitulo:eltitulo ysubtitulo:elsubtitulo];
                 }
             }
         }
@@ -125,9 +125,14 @@
 
 -(void)configuraVista:(detalleContradiccionHome *)vista
             contitulo:(NSString *)eltitulo{
-    vista.textoTitulo = eltitulo;
+    vista.titulo = eltitulo;
 }
 
+-(void)configuraVista:(detalleContradiccionHome *)vista contitulo:(NSString *)eltitulo ysubtitulo:(NSString *)elsubtitulo{
+
+    vista.titulo = eltitulo;
+    vista.subtitulo = elsubtitulo;
+}
 
 
 
